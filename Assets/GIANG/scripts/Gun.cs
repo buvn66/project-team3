@@ -10,11 +10,10 @@ public class Gun : MonoBehaviour
     public float FireForce = 1.0f;
 
     private float timeFire;
-    private Rigidbody2D rb;
 
     private void Start()
     {
-        rb = GetComponent<Rigidbody2D>();
+       
     }
     void Update()
     {
@@ -45,7 +44,7 @@ public class Gun : MonoBehaviour
 
         GameObject BulletTmp = Instantiate(bullet, FirePos.position, Quaternion.identity);
 
-        rb = BulletTmp.GetComponent<Rigidbody2D>();
+        Rigidbody2D rb = BulletTmp.GetComponent<Rigidbody2D>();
         rb.AddForce(transform.right * FireForce, ForceMode2D.Impulse);
     }
 }

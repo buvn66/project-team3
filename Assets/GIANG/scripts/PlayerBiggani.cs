@@ -11,6 +11,7 @@ public class Player : MonoBehaviour
     public Vector3 moveInput;
 
     private Animator animator;
+    public SpriteRenderer characterSR;
 
     public float dashBoost = 2f;
     private float dashTime;
@@ -56,11 +57,11 @@ public class Player : MonoBehaviour
         {
             if (moveInput.x < 0)
             {
-                transform.localScale = new Vector3(-1, 1, 0);
+                characterSR.transform.localScale = new Vector3(-1, 1, 0);
             }
             else
             {
-                transform.localScale = new Vector3(1, 1, 0);
+                characterSR.transform.localScale = new Vector3(1, 1, 0);
             }
         }
     }
