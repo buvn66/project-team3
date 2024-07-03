@@ -43,33 +43,39 @@ public class Gun : MonoBehaviour
         if (cooldownTimer > 0)
             return;
 
-        // Tự động bắn theo enemy
+        // Tìm tất cả các enemy trong phạm vi
         GameObject[] enemies = GameObject.FindGameObjectsWithTag("Enemy");
 
         if (enemies.Length == 0)
+        {
+            // Không có enemy, không thực hiện bắn
             return;
-
-        // Tính toán hướng nhắm bắn
-        Vector3 targetDir = enemies[0].transform.position - FirePos.position;
-        float angle = Mathf.Atan2(targetDir.y, targetDir.x) * Mathf.Rad2Deg;
-        Quaternion rotation = Quaternion.Euler(0, 0, angle);
-
-        // Áp dụng hướng xoay cho súng
-        transform.rotation = rotation;
-
-        // Kiểm tra hướng quay của súng để điều chỉnh scale
-        if (transform.eulerAngles.z > 90 && transform.eulerAngles.z < 270)
-            transform.localScale = new Vector3(1, -1, 1);
+        }
         else
-            transform.localScale = new Vector3(1, 1, 1);
+        {
+            // Có enemy, tiến hành bắn
+            // Chỉ nhắm vào enemy gần nhất (enemies[0])
+            Vector3 targetDir = enemies[0].transform.position - FirePos.position;
+            float angle = Mathf.Atan2(targetDir.y, targetDir.x) * Mathf.Rad2Deg;
+            Quaternion rotation = Quaternion.Euler(0, 0, angle);
 
-        // Bắn đạn
-        GameObject BulletTmp = Instantiate(bullet, FirePos.position, rotation);
-        Rigidbody2D rb = BulletTmp.GetComponent<Rigidbody2D>();
-        rb.AddForce(BulletTmp.transform.right * FireForce, ForceMode2D.Impulse);
+            // Áp dụng hướng xoay cho súng
+            transform.rotation = rotation;
 
-        // Đặt lại cooldown
-        cooldownTimer = cooldownTime;
+            // Kiểm tra hướng quay của súng để điều chỉnh scale
+            if (transform.eulerAngles.z > 90 && transform.eulerAngles.z < 270)
+                transform.localScale = new Vector3(1, -1, 1);
+            else
+                transform.localScale = new Vector3(1, 1, 1);
+
+            // Bắn đạn
+            GameObject BulletTmp = Instantiate(bullet, FirePos.position, rotation);
+            Rigidbody2D rb = BulletTmp.GetComponent<Rigidbody2D>();
+            rb.AddForce(BulletTmp.transform.right * FireForce, ForceMode2D.Impulse);
+
+            // Đặt lại cooldown
+            cooldownTimer = cooldownTime;
+        }
     }
 
     void FollowPlayer()
