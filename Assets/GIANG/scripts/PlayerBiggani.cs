@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.TextCore.Text;
 using UnityEngine.Animations;
 
-public class Player : MonoBehaviour
+public class PlayerBiggani : MonoBehaviour
 {
     public float moveSpeed = 5f;
     private Rigidbody2D rb;
@@ -16,6 +16,7 @@ public class Player : MonoBehaviour
     private float dashTime;
     public float DashTime;
     private bool once;
+    public GameObject currentWeapon;
     private void Start()
     {
         animator = GetComponent<Animator>();
@@ -71,6 +72,15 @@ public class Player : MonoBehaviour
         else
         {
             animator.SetBool("DanhTay", false);
+        }
+    }
+
+    public void ShowCurrentWeapon()
+    {
+        if (currentWeapon != null)
+        {
+            currentWeapon.SetActive(true); // Hiển thị vũ khí có sẵn
+            currentWeapon = null; // Xóa reference để ngăn cản việc hiển thị lại
         }
     }
 }
