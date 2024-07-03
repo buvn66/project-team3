@@ -24,10 +24,15 @@ public class Player : MonoBehaviour
     
     private void Update()
     {
+        //di chuyển
         moveInput.x = Input.GetAxisRaw("Horizontal");
         moveInput.y = Input.GetAxisRaw("Vertical");
         transform.position += moveSpeed * Time.deltaTime * moveInput;
 
+        //animation
+        animator.SetFloat("Speed", moveInput.sqrMagnitude);
+
+        //dash
         if (Input.GetKeyDown(KeyCode.LeftShift) && dashTime <= 0)
         {
             animator.SetBool("Roll", true);
