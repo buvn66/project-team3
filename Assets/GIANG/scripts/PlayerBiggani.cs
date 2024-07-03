@@ -1,40 +1,45 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
+using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
-using UnityEngine.TextCore.Text;
-using UnityEngine.Animations;
 
-public class Player : MonoBehaviour
+public class PlayerBiGgani : MonoBehaviour
 {
     public float moveSpeed = 5f;
-    private Rigidbody2D rb;
-    public Vector3 moveInput;
 
-    private Animator animator;
+    public Rigidbody2D rb;
     public SpriteRenderer characterSR;
+    Animator animator;
 
     public float dashBoost = 2f;
     private float dashTime;
     public float DashTime;
     private bool once;
+
+    public Vector3 moveInput;
+
     private void Start()
     {
-        animator = GetComponent<Animator>();
+        rb = GetComponent<Rigidbody2D>();
+        animator = GetComponentInChildren<Animator>();
     }
 
-    
-    private void Update()
+
+    // Update is called once per frame
+    void Update()
     {
-        //di chuyển
+        /// Part 2
+        // Movement
         moveInput.x = Input.GetAxisRaw("Horizontal");
         moveInput.y = Input.GetAxisRaw("Vertical");
         transform.position += moveSpeed * Time.deltaTime * moveInput;
+        //
 
-        //animation
         animator.SetFloat("Speed", moveInput.sqrMagnitude);
 
-        //dash
-        if (Input.GetKeyDown(KeyCode.LeftShift) && dashTime <= 0)
+        if (Input.GetKeyDown(KeyCode.Space) && dashTime <= 0)
         {
             animator.SetBool("Dash", true);
             moveSpeed += dashBoost;
@@ -53,16 +58,11 @@ public class Player : MonoBehaviour
             dashTime -= Time.deltaTime;
         }
 
+        // Rotate Face
         if (moveInput.x != 0)
-        {
             if (moveInput.x < 0)
-            {
                 characterSR.transform.localScale = new Vector3(-1, 1, 0);
-            }
             else
-            {
                 characterSR.transform.localScale = new Vector3(1, 1, 0);
-            }
-        }
     }
 }
