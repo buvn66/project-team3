@@ -35,7 +35,7 @@ public class Player : MonoBehaviour
         //dash
         if (Input.GetKeyDown(KeyCode.LeftShift) && dashTime <= 0)
         {
-            animator.SetBool("Roll", true);
+            animator.SetBool("Dash", true);
             moveSpeed += dashBoost;
             dashTime = DashTime;
             once = true;
