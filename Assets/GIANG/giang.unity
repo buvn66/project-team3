@@ -256,7 +256,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 5
   moveInput: {x: 0, y: 0, z: 0}
-  characterSR: {fileID: 854346428}
   dashBoost: 10
   DashTime: 0.25
 --- !u!50 &231763419

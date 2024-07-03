@@ -36,16 +36,13 @@ AnimatorStateMachine:
   m_ChildStates:
   - serializedVersion: 1
     m_State: {fileID: 1450246783116065918}
-    m_Position: {x: 40, y: 260, z: 0}
+    m_Position: {x: 40, y: 310, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -183477254229298899}
-    m_Position: {x: 400, y: 200, z: 0}
+    m_Position: {x: 360, y: 210, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -2696781447330248760}
-    m_Position: {x: 380, y: 340, z: 0}
-  - serializedVersion: 1
-    m_State: {fileID: -2197559035528264808}
-    m_Position: {x: 205.16324, y: 226.7997, z: 0}
+    m_Position: {x: 360, y: 350, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions: []
   m_EntryTransitions: []
@@ -103,32 +100,6 @@ AnimatorState:
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
   m_Motion: {fileID: 7400000, guid: b5da94524684f2946832028a2034d232, type: 2}
-  m_Tag: 
-  m_SpeedParameter: 
-  m_MirrorParameter: 
-  m_CycleOffsetParameter: 
-  m_TimeParameter: 
---- !u!1102 &-2197559035528264808
-AnimatorState:
-  serializedVersion: 6
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: FireBall
-  m_Speed: 1
-  m_CycleOffset: 0
-  m_Transitions: []
-  m_StateMachineBehaviours: []
-  m_Position: {x: 50, y: 50, z: 0}
-  m_IKOnFeet: 0
-  m_WriteDefaultValues: 1
-  m_Mirror: 0
-  m_SpeedParameterActive: 0
-  m_MirrorParameterActive: 0
-  m_CycleOffsetParameterActive: 0
-  m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 782e8cb00e6afa541a85c15ef4c1d57d, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
