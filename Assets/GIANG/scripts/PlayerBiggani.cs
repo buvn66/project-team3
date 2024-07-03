@@ -63,5 +63,14 @@ public class Player : MonoBehaviour
                 transform.localScale = new Vector3(1, 1, 0);
             }
         }
+        //danh tay
+        if (Input.GetKeyDown(KeyCode.Mouse0))
+        {
+            animator.SetBool("DanhTay", true);
+        }
+        else
+        {
+            animator.SetBool("DanhTay", false);
+        }
     }
 }
