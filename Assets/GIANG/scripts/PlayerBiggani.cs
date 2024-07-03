@@ -28,7 +28,24 @@ public class Player : MonoBehaviour
         moveInput.y = Input.GetAxisRaw("Vertical");
         transform.position += moveSpeed * Time.deltaTime * moveInput;
 
+        if (Input.GetKeyDown(KeyCode.Space) && dashTime <= 0)
+        {
+            animator.SetBool("Roll", true);
+            moveSpeed += dashBoost;
+            dashTime = DashTime;
+            once = true;
+        }
 
+        if (dashTime <= 0 && once)
+        {
+            animator.SetBool("Roll", false);
+            moveSpeed -= dashBoost;
+            once = false;
+        }
+        else
+        {
+            dashTime -= Time.deltaTime;
+        }
 
         if (moveInput.x != 0)
         {
