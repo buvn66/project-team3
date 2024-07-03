@@ -43,7 +43,7 @@ public class Player : MonoBehaviour
 
         if (dashTime <= 0 && once)
         {
-            animator.SetBool("Roll", false);
+            animator.SetBool("Dash", false);
             moveSpeed -= dashBoost;
             once = false;
         }
