@@ -43,9 +43,30 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Ground
+    uniqueID: 1012019821
+    locked: 0
+  - name: Ground1
+    uniqueID: 1239047867
+    locked: 0
+  - name: Cau
+    uniqueID: 1139698177
+    locked: 0
   - name: Ball
     uniqueID: 1758789799
     locked: 0
+  - name: Staff
+    uniqueID: 625383177
+    locked: 0
   - name: Player
     uniqueID: 2212547545
+    locked: 0
+  - name: Wall
+    uniqueID: 892619731
+    locked: 0
+  - name: Water
+    uniqueID: 671062013
+    locked: 0
+  - name: Tree
+    uniqueID: 4292779351
     locked: 0
