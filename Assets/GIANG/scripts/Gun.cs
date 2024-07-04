@@ -53,8 +53,7 @@ public class Gun : MonoBehaviour
         }
         else
         {
-            // Có enemy, tiến hành bắn
-            // Chỉ nhắm vào enemy gần nhất (enemies[0])
+            // Có enemy, tiến hành bắn vào enemy đầu tiên (enemies[0])
             Vector3 targetDir = enemies[0].transform.position - FirePos.position;
             float angle = Mathf.Atan2(targetDir.y, targetDir.x) * Mathf.Rad2Deg;
             Quaternion rotation = Quaternion.Euler(0, 0, angle);
@@ -69,12 +68,22 @@ public class Gun : MonoBehaviour
                 transform.localScale = new Vector3(1, 1, 1);
 
             // Bắn đạn
-            GameObject BulletTmp = Instantiate(bullet, FirePos.position, rotation);
-            Rigidbody2D rb = BulletTmp.GetComponent<Rigidbody2D>();
-            rb.AddForce(BulletTmp.transform.right * FireForce, ForceMode2D.Impulse);
+            GameObject bulletInstance = Instantiate(bullet, FirePos.position, rotation);
+            Rigidbody2D rb = bulletInstance.GetComponent<Rigidbody2D>();
+            rb.AddForce(bulletInstance.transform.right * FireForce, ForceMode2D.Impulse);
+
+            // Kích hoạt Animator của viên đạn để bắt đầu animation
+            Animator animator = bulletInstance.GetComponent<Animator>();
+            if (animator != null)
+            {
+                animator.SetTrigger("Shoot");
+            }
 
             // Đặt lại cooldown
             cooldownTimer = cooldownTime;
+
+            // Hủy bỏ viên đạn sau khi hoàn thành animation
+            Destroy(bulletInstance, cooldownTime);
         }
     }
 
