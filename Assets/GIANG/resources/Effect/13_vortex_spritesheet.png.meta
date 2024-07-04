@@ -1,0 +1,1770 @@
+fileFormatVersion: 2
+guid: 4ae469fe2f08eed4e9bb664a1d98d377
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: 13_vortex_spritesheet_0
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 713
+        width: 68
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3adb0278f3130a04c8b7d0a12457f403
+      internalID: 769947462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 13_vortex_spritesheet_1
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 714
+        width: 69
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8030e9ab21a3824f9c6c61ae113fd4f
+      internalID: -2134657830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 13_vortex_spritesheet_4
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 713
+        width: 68
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bad4ba35f1acb4b489d114b0e1b93bc7
+      internalID: 101843414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 13_vortex_spritesheet_5
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 714
+        width: 70
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46af75c1b94c67f43800f4fb32f4623d
+      internalID: 1559675491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 13_vortex_spritesheet_7
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 714
+        width: 66
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 493142fd0e562a7408c0a899bda2a210
+      internalID: -1389319329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 13_vortex_spritesheet_8
+      rect:
+        serializedVersion: 2
+        x: 518
+        y: 713
+        width: 67
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52c2364427b37734ba36dd28e4a48a7d
+      internalID: -804303006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 13_vortex_spritesheet_10
+      rect:
+        serializedVersion: 2
+        x: 617
+        y: 712
+        width: 69
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efedbed3458f73b40b5c993f9141a8b5
+      internalID: 209053291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 13_vortex_spritesheet_13
+      rect:
+        serializedVersion: 2
+        x: 716
+        y: 718
+        width: 70
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 839d02f25657ccd42a49222db24b21ec
+      internalID: 1167585492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 13_vortex_spritesheet_42
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 619
+        width: 69
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd277ffb5b52b1a47917d91c70329731
+      internalID: -275171155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 13_vortex_spritesheet_43
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 618
+        width: 70
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53e1646bdcf404d489a8f18e9fcc46bf
+      internalID: -578761283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 13_vortex_spritesheet_45
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 618
+        width: 71
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe0bbd2152891174c99d5b95ad52716d
+      internalID: 1676858096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 13_vortex_spritesheet_46
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 617
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12aa0e081f108e842946739efcfc94d1
+      internalID: 1107112041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 13_vortex_spritesheet_47
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 617
+        width: 72
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e4075bd96ecf14488ba54ab9d764e92
+      internalID: 525310061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 13_vortex_spritesheet_48
+      rect:
+        serializedVersion: 2
+        x: 519
+        y: 616
+        width: 70
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cfe61b750b40484aaabeeb43b7970e8
+      internalID: -330243807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 13_vortex_spritesheet_49
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 615
+        width: 72
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a232b9432ed978b438dcdf6e15de969d
+      internalID: -1436606538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 13_vortex_spritesheet_50
+      rect:
+        serializedVersion: 2
+        x: 718
+        y: 617
+        width: 73
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7be9677cb813c14485957993104513f
+      internalID: 89822605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 13_vortex_spritesheet_73
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 517
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfa297cb3f3b97d49904a208528b19f8
+      internalID: -1725575334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 13_vortex_spritesheet_74
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 516
+        width: 66
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9529142f8c17c8e4594f0670d4aad8eb
+      internalID: 1079601153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 13_vortex_spritesheet_77
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 515
+        width: 68
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2c7e5b7f04dff24999e79eb3d99881b
+      internalID: 655255525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 13_vortex_spritesheet_78
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 515
+        width: 68
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ca2b8501d6f1df419e587b867edac78
+      internalID: 1952430930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 13_vortex_spritesheet_80
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 514
+        width: 67
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd6d1f4a17bf709488e24861c0af3b46
+      internalID: 681350154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 13_vortex_spritesheet_83
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 515
+        width: 63
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29d63992dabebc846937ef76b57939d3
+      internalID: -1430800270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 13_vortex_spritesheet_86
+      rect:
+        serializedVersion: 2
+        x: 614
+        y: 513
+        width: 69
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1177b11ff7fbe6944824bbc93fd523ef
+      internalID: -1935930923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 13_vortex_spritesheet_89
+      rect:
+        serializedVersion: 2
+        x: 719
+        y: 515
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b84f7a16573b0274a8664cbe230b7b93
+      internalID: -651833366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 13_vortex_spritesheet_108
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 417
+        width: 67
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c971787ff64711448633cad0e35919c
+      internalID: -861510290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 13_vortex_spritesheet_111
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 416
+        width: 67
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c42be00a3c3e82438b993ee75e7fbea
+      internalID: 63013506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 13_vortex_spritesheet_113
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 415
+        width: 68
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38db00fb0a7e5e14391b8167e51fad32
+      internalID: 1881873014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 13_vortex_spritesheet_115
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 415
+        width: 70
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e37dfc58728dd14a88216cba49ebce3
+      internalID: -581051475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 13_vortex_spritesheet_117
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 414
+        width: 71
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cc9ed650d74281469a3ca129b1eca8b
+      internalID: -721258819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 13_vortex_spritesheet_123
+      rect:
+        serializedVersion: 2
+        x: 721
+        y: 417
+        width: 68
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7dc456cba01db9149b416e3cd8317c43
+      internalID: -795465399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 13_vortex_spritesheet_135
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 413
+        width: 72
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84ce386d3a4a7a2488a5d4fba0fc74da
+      internalID: 1207961681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 13_vortex_spritesheet_136
+      rect:
+        serializedVersion: 2
+        x: 615
+        y: 413
+        width: 74
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc31f695ed16a9b44bd4197992e26e74
+      internalID: -547105702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 13_vortex_spritesheet_171
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 316
+        width: 71
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f17f0d39c1bf3bf4a9c68772bf684621
+      internalID: 812173694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 13_vortex_spritesheet_173
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 315
+        width: 65
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09665f977c1a95b44ae365ac7a5c9f67
+      internalID: -1888268188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 13_vortex_spritesheet_175
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 314
+        width: 67
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76e2955ba19d1874293f7cbf4c670b91
+      internalID: -1103619721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 13_vortex_spritesheet_178
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 314
+        width: 68
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d56ec30d63b1c0543aaf773b82333902
+      internalID: -671562168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 13_vortex_spritesheet_183
+      rect:
+        serializedVersion: 2
+        x: 616
+        y: 312
+        width: 68
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03fd8cc309bda5b4f9e645be826881b3
+      internalID: 1245503579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 13_vortex_spritesheet_184
+      rect:
+        serializedVersion: 2
+        x: 716
+        y: 314
+        width: 68
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2dcd393ebbbf2d64484cdf3e1b1163e8
+      internalID: -1763550924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 13_vortex_spritesheet_186
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 316
+        width: 76
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c9eeb5932e74df4989dfbbf0c2afecc
+      internalID: 1048429977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 13_vortex_spritesheet_192
+      rect:
+        serializedVersion: 2
+        x: 517
+        y: 313
+        width: 70
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5b2decec7e0b8443b385bbda804700a
+      internalID: -131911634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 13_vortex_spritesheet_220
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 215
+        width: 71
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 012b11de8ee9eb44baedc47d3937c64a
+      internalID: -1311519292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 13_vortex_spritesheet_222
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 214
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22da29d3998412e4c80332a9fa4c5c4c
+      internalID: 2060181856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 13_vortex_spritesheet_223
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 214
+        width: 67
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e65d85fe97904a4ea62c35515e9358c
+      internalID: 468545303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 13_vortex_spritesheet_225
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 214
+        width: 68
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2921c503429688243b52887401efe1a3
+      internalID: 1005996305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 13_vortex_spritesheet_226
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 213
+        width: 70
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6897d3ff118b5334eb522fa732f5460d
+      internalID: -1192843734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 13_vortex_spritesheet_227
+      rect:
+        serializedVersion: 2
+        x: 517
+        y: 219
+        width: 70
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a401f35ddb07614296b451f97f01f3c
+      internalID: -1115745409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 13_vortex_spritesheet_228
+      rect:
+        serializedVersion: 2
+        x: 616
+        y: 218
+        width: 72
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6842730494cae445b88abae3cb96b24
+      internalID: 1812120479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 13_vortex_spritesheet_229
+      rect:
+        serializedVersion: 2
+        x: 718
+        y: 218
+        width: 71
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b89882846aeb776488d19ace6e267698
+      internalID: 464704031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 13_vortex_spritesheet_271
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 117
+        width: 69
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b12499d531211064dad3294ba93f6e58
+      internalID: 1269938727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 13_vortex_spritesheet_272
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 116
+        width: 71
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b630f4f032ee2ed4b9891e11e599a242
+      internalID: 965727173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 13_vortex_spritesheet_275
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 116
+        width: 66
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 796736d80a17900429aea5c9033ec2df
+      internalID: -181909047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 13_vortex_spritesheet_276
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 116
+        width: 68
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27eea24884b5fa8408612814c910cbf6
+      internalID: -1532990002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 13_vortex_spritesheet_278
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 116
+        width: 66
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2dd37378536a344097f7890c3259263
+      internalID: -2098258091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 13_vortex_spritesheet_281
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 114
+        width: 70
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8771c42cfaedcb34991bff3fd06735db
+      internalID: 2018170919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 13_vortex_spritesheet_282
+      rect:
+        serializedVersion: 2
+        x: 617
+        y: 114
+        width: 75
+        height: 77
+      alignment: 9
+      pivot: {x: 0.4613798, y: 0.4615548}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 260d4c3fa32c96d42a46aa6038f41cc0
+      internalID: 1007067769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 13_vortex_spritesheet_285
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 116
+        width: 69
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91135ad9a7bf0d44d983b1ccc9e51f55
+      internalID: 2143361866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 13_vortex_spritesheet_325
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 15
+        width: 63
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77b3ce7d5f7e3ac4e9232b2c862b9f66
+      internalID: 2063491056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 13_vortex_spritesheet_326
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 15
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0319e87d50109eb45a1c2568b4fad142
+      internalID: 1508765071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 13_vortex_spritesheet_327
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 14
+        width: 73
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: edc6cc8f7aa6e8947945128e8acfb846
+      internalID: -1541478502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 13_vortex_spritesheet_328
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 14
+        width: 67
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f95191b9d7e59a44f82644311ed11d3a
+      internalID: -588813148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 13_vortex_spritesheet_331
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 13
+        width: 68
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15909df76810441439716e625c9272eb
+      internalID: -1039234791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      13_vortex_spritesheet_0: 769947462
+      13_vortex_spritesheet_1: -2134657830
+      13_vortex_spritesheet_10: 209053291
+      13_vortex_spritesheet_100: -1219269054
+      13_vortex_spritesheet_101: 1681313265
+      13_vortex_spritesheet_102: -379630739
+      13_vortex_spritesheet_103: -1885392774
+      13_vortex_spritesheet_104: 1745386886
+      13_vortex_spritesheet_105: -2021759458
+      13_vortex_spritesheet_106: -1306088119
+      13_vortex_spritesheet_107: -877273286
+      13_vortex_spritesheet_108: -861510290
+      13_vortex_spritesheet_109: -315074685
+      13_vortex_spritesheet_11: 279936882
+      13_vortex_spritesheet_110: -14055611
+      13_vortex_spritesheet_111: 63013506
+      13_vortex_spritesheet_112: 1949659024
+      13_vortex_spritesheet_113: 1881873014
+      13_vortex_spritesheet_114: 14628386
+      13_vortex_spritesheet_115: -581051475
+      13_vortex_spritesheet_116: 699003755
+      13_vortex_spritesheet_117: -721258819
+      13_vortex_spritesheet_118: -934759224
+      13_vortex_spritesheet_119: 1111735203
+      13_vortex_spritesheet_12: 301883046
+      13_vortex_spritesheet_120: -29373840
+      13_vortex_spritesheet_121: 1270490500
+      13_vortex_spritesheet_122: -6707598
+      13_vortex_spritesheet_123: -795465399
+      13_vortex_spritesheet_124: -401731984
+      13_vortex_spritesheet_125: 1536095846
+      13_vortex_spritesheet_126: 1743639815
+      13_vortex_spritesheet_127: -1737108238
+      13_vortex_spritesheet_128: -2120452577
+      13_vortex_spritesheet_129: 1989504976
+      13_vortex_spritesheet_13: 1167585492
+      13_vortex_spritesheet_130: -1919305628
+      13_vortex_spritesheet_131: -1885753263
+      13_vortex_spritesheet_132: 940784226
+      13_vortex_spritesheet_133: 414183835
+      13_vortex_spritesheet_134: -855351089
+      13_vortex_spritesheet_135: 1207961681
+      13_vortex_spritesheet_136: -547105702
+      13_vortex_spritesheet_137: 697486095
+      13_vortex_spritesheet_138: 965900804
+      13_vortex_spritesheet_139: -564169576
+      13_vortex_spritesheet_14: -709529883
+      13_vortex_spritesheet_140: -1318501498
+      13_vortex_spritesheet_141: 205697277
+      13_vortex_spritesheet_142: 117824874
+      13_vortex_spritesheet_143: 40789820
+      13_vortex_spritesheet_144: 367714150
+      13_vortex_spritesheet_145: -1777943455
+      13_vortex_spritesheet_146: -275279376
+      13_vortex_spritesheet_147: 1125023279
+      13_vortex_spritesheet_148: -1467105950
+      13_vortex_spritesheet_149: -2100140340
+      13_vortex_spritesheet_15: -833455669
+      13_vortex_spritesheet_150: 1813059984
+      13_vortex_spritesheet_151: -1254112636
+      13_vortex_spritesheet_152: -373866361
+      13_vortex_spritesheet_153: -287666418
+      13_vortex_spritesheet_154: -814048572
+      13_vortex_spritesheet_155: 188393535
+      13_vortex_spritesheet_156: 2066163365
+      13_vortex_spritesheet_157: 1561342768
+      13_vortex_spritesheet_158: -1197665742
+      13_vortex_spritesheet_159: 689245464
+      13_vortex_spritesheet_16: 170015257
+      13_vortex_spritesheet_160: -1207942659
+      13_vortex_spritesheet_161: -133482528
+      13_vortex_spritesheet_162: -4480541
+      13_vortex_spritesheet_163: 1211039350
+      13_vortex_spritesheet_164: 512934771
+      13_vortex_spritesheet_165: 1580487499
+      13_vortex_spritesheet_166: -1569651503
+      13_vortex_spritesheet_167: 82843737
+      13_vortex_spritesheet_168: -1863048474
+      13_vortex_spritesheet_169: 2055040080
+      13_vortex_spritesheet_17: 107242068
+      13_vortex_spritesheet_170: -2091695018
+      13_vortex_spritesheet_171: 812173694
+      13_vortex_spritesheet_172: -328240633
+      13_vortex_spritesheet_173: -1888268188
+      13_vortex_spritesheet_174: -1448214958
+      13_vortex_spritesheet_175: -1103619721
+      13_vortex_spritesheet_176: -2039642979
+      13_vortex_spritesheet_177: -781707839
+      13_vortex_spritesheet_178: -671562168
+      13_vortex_spritesheet_179: 1146415854
+      13_vortex_spritesheet_18: -70502521
+      13_vortex_spritesheet_180: 1759540365
+      13_vortex_spritesheet_181: -1334098603
+      13_vortex_spritesheet_182: 592545425
+      13_vortex_spritesheet_183: 1245503579
+      13_vortex_spritesheet_184: -1763550924
+      13_vortex_spritesheet_185: 700738396
+      13_vortex_spritesheet_186: 1048429977
+      13_vortex_spritesheet_187: -1170467743
+      13_vortex_spritesheet_188: -1049781
+      13_vortex_spritesheet_189: 1091690734
+      13_vortex_spritesheet_19: -913734172
+      13_vortex_spritesheet_190: 732258276
+      13_vortex_spritesheet_191: 16598297
+      13_vortex_spritesheet_192: -131911634
+      13_vortex_spritesheet_193: 1321370757
+      13_vortex_spritesheet_194: -2108741195
+      13_vortex_spritesheet_195: 1402644150
+      13_vortex_spritesheet_196: -1809222991
+      13_vortex_spritesheet_197: -1668856377
+      13_vortex_spritesheet_198: 1073799398
+      13_vortex_spritesheet_199: -1576165921
+      13_vortex_spritesheet_2: -2072682312
+      13_vortex_spritesheet_20: 1945611690
+      13_vortex_spritesheet_200: 1495688122
+      13_vortex_spritesheet_201: 1068682085
+      13_vortex_spritesheet_202: 914523628
+      13_vortex_spritesheet_203: 2147307339
+      13_vortex_spritesheet_204: 376262750
+      13_vortex_spritesheet_205: 371473807
+      13_vortex_spritesheet_206: 1036799393
+      13_vortex_spritesheet_207: -666245833
+      13_vortex_spritesheet_208: 1434252802
+      13_vortex_spritesheet_209: -2021343538
+      13_vortex_spritesheet_21: 1586162881
+      13_vortex_spritesheet_210: -1522396189
+      13_vortex_spritesheet_211: -1336461439
+      13_vortex_spritesheet_212: -2072665484
+      13_vortex_spritesheet_213: 1520040859
+      13_vortex_spritesheet_214: -1211571380
+      13_vortex_spritesheet_215: 748250818
+      13_vortex_spritesheet_216: -2021897849
+      13_vortex_spritesheet_217: -1433369621
+      13_vortex_spritesheet_218: 628504831
+      13_vortex_spritesheet_219: -791314713
+      13_vortex_spritesheet_22: -172501083
+      13_vortex_spritesheet_220: -1311519292
+      13_vortex_spritesheet_221: -330291207
+      13_vortex_spritesheet_222: 2060181856
+      13_vortex_spritesheet_223: 468545303
+      13_vortex_spritesheet_224: 1966131139
+      13_vortex_spritesheet_225: 1005996305
+      13_vortex_spritesheet_226: -1192843734
+      13_vortex_spritesheet_227: -1115745409
+      13_vortex_spritesheet_228: 1812120479
+      13_vortex_spritesheet_229: 464704031
+      13_vortex_spritesheet_23: 2047719943
+      13_vortex_spritesheet_230: 1183566698
+      13_vortex_spritesheet_231: 1791517124
+      13_vortex_spritesheet_232: 1820968309
+      13_vortex_spritesheet_233: 946555476
+      13_vortex_spritesheet_234: 1426470748
+      13_vortex_spritesheet_235: 1914615223
+      13_vortex_spritesheet_236: -1232408799
+      13_vortex_spritesheet_237: 583670888
+      13_vortex_spritesheet_238: 1409736625
+      13_vortex_spritesheet_239: -1673749241
+      13_vortex_spritesheet_24: -1270795287
+      13_vortex_spritesheet_240: 6422537
+      13_vortex_spritesheet_241: 1912972598
+      13_vortex_spritesheet_242: 1793736991
+      13_vortex_spritesheet_243: -689408327
+      13_vortex_spritesheet_244: 1645100149
+      13_vortex_spritesheet_245: -898465347
+      13_vortex_spritesheet_246: 264351650
+      13_vortex_spritesheet_247: 395728609
+      13_vortex_spritesheet_248: 1970329284
+      13_vortex_spritesheet_249: -1644747789
+      13_vortex_spritesheet_25: -880589594
+      13_vortex_spritesheet_250: 1618105644
+      13_vortex_spritesheet_251: -1500086533
+      13_vortex_spritesheet_252: -779577125
+      13_vortex_spritesheet_253: 1660110363
+      13_vortex_spritesheet_254: -1653456414
+      13_vortex_spritesheet_255: -1538431092
+      13_vortex_spritesheet_256: 170476682
+      13_vortex_spritesheet_257: -2137856074
+      13_vortex_spritesheet_258: -2074415151
+      13_vortex_spritesheet_259: 1091814768
+      13_vortex_spritesheet_26: 2042959277
+      13_vortex_spritesheet_260: -1051318573
+      13_vortex_spritesheet_261: -1878585882
+      13_vortex_spritesheet_262: -490375679
+      13_vortex_spritesheet_263: 1485458074
+      13_vortex_spritesheet_264: 943519346
+      13_vortex_spritesheet_265: -835210151
+      13_vortex_spritesheet_266: -630989157
+      13_vortex_spritesheet_267: 1100606029
+      13_vortex_spritesheet_268: 828162221
+      13_vortex_spritesheet_269: 79873023
+      13_vortex_spritesheet_27: -247492089
+      13_vortex_spritesheet_270: -886661945
+      13_vortex_spritesheet_271: 1269938727
+      13_vortex_spritesheet_272: 965727173
+      13_vortex_spritesheet_273: 122678615
+      13_vortex_spritesheet_274: -1170696719
+      13_vortex_spritesheet_275: -181909047
+      13_vortex_spritesheet_276: -1532990002
+      13_vortex_spritesheet_277: -1948439077
+      13_vortex_spritesheet_278: -2098258091
+      13_vortex_spritesheet_279: 1542756801
+      13_vortex_spritesheet_28: 567806274
+      13_vortex_spritesheet_280: 1255040391
+      13_vortex_spritesheet_281: 2018170919
+      13_vortex_spritesheet_282: 1007067769
+      13_vortex_spritesheet_283: -1347903132
+      13_vortex_spritesheet_284: -339718759
+      13_vortex_spritesheet_285: 2143361866
+      13_vortex_spritesheet_286: 1937303140
+      13_vortex_spritesheet_287: -946127551
+      13_vortex_spritesheet_288: -403402109
+      13_vortex_spritesheet_289: 573233572
+      13_vortex_spritesheet_29: 651639478
+      13_vortex_spritesheet_290: -979017188
+      13_vortex_spritesheet_291: 870174232
+      13_vortex_spritesheet_292: -158329232
+      13_vortex_spritesheet_293: -1530637091
+      13_vortex_spritesheet_294: 722673813
+      13_vortex_spritesheet_295: 1469181091
+      13_vortex_spritesheet_296: -408035102
+      13_vortex_spritesheet_297: -1971118706
+      13_vortex_spritesheet_298: 124644641
+      13_vortex_spritesheet_299: -1187220927
+      13_vortex_spritesheet_3: -1490289069
+      13_vortex_spritesheet_30: 908977908
+      13_vortex_spritesheet_300: 1059661605
+      13_vortex_spritesheet_301: 986282226
+      13_vortex_spritesheet_302: 1832787082
+      13_vortex_spritesheet_303: 1618464649
+      13_vortex_spritesheet_304: -207197946
+      13_vortex_spritesheet_305: 2011540198
+      13_vortex_spritesheet_306: 449262278
+      13_vortex_spritesheet_307: -1783455529
+      13_vortex_spritesheet_308: 174178354
+      13_vortex_spritesheet_309: -563436261
+      13_vortex_spritesheet_31: -260703489
+      13_vortex_spritesheet_310: -133444083
+      13_vortex_spritesheet_311: 1642706481
+      13_vortex_spritesheet_312: 455935189
+      13_vortex_spritesheet_313: 918308919
+      13_vortex_spritesheet_314: 106252364
+      13_vortex_spritesheet_315: 1776108119
+      13_vortex_spritesheet_316: 1507443527
+      13_vortex_spritesheet_317: -603306659
+      13_vortex_spritesheet_318: 1279244732
+      13_vortex_spritesheet_319: 335541778
+      13_vortex_spritesheet_32: 1954899447
+      13_vortex_spritesheet_320: -588724264
+      13_vortex_spritesheet_321: 1246338765
+      13_vortex_spritesheet_322: -2146226656
+      13_vortex_spritesheet_323: 1778766056
+      13_vortex_spritesheet_324: 400728884
+      13_vortex_spritesheet_325: 2063491056
+      13_vortex_spritesheet_326: 1508765071
+      13_vortex_spritesheet_327: -1541478502
+      13_vortex_spritesheet_328: -588813148
+      13_vortex_spritesheet_329: 2078265611
+      13_vortex_spritesheet_33: -279479410
+      13_vortex_spritesheet_330: 355641285
+      13_vortex_spritesheet_331: -1039234791
+      13_vortex_spritesheet_332: 17485586
+      13_vortex_spritesheet_333: 1566802410
+      13_vortex_spritesheet_334: -559966770
+      13_vortex_spritesheet_335: -815540868
+      13_vortex_spritesheet_336: 1660601053
+      13_vortex_spritesheet_337: -451755104
+      13_vortex_spritesheet_338: -1650254616
+      13_vortex_spritesheet_339: -1631705332
+      13_vortex_spritesheet_34: 504009473
+      13_vortex_spritesheet_340: -1986355838
+      13_vortex_spritesheet_341: 153487683
+      13_vortex_spritesheet_342: 2069507459
+      13_vortex_spritesheet_343: 57407494
+      13_vortex_spritesheet_344: -1566100613
+      13_vortex_spritesheet_345: 688130584
+      13_vortex_spritesheet_346: 292697104
+      13_vortex_spritesheet_347: 277188846
+      13_vortex_spritesheet_348: 1326393407
+      13_vortex_spritesheet_349: -657388382
+      13_vortex_spritesheet_35: -307350898
+      13_vortex_spritesheet_350: 19442621
+      13_vortex_spritesheet_351: -81269377
+      13_vortex_spritesheet_352: -736989891
+      13_vortex_spritesheet_353: 1158499788
+      13_vortex_spritesheet_354: 457928568
+      13_vortex_spritesheet_355: 1228592282
+      13_vortex_spritesheet_356: 506698573
+      13_vortex_spritesheet_357: -1696032373
+      13_vortex_spritesheet_358: -1698564089
+      13_vortex_spritesheet_359: 106571474
+      13_vortex_spritesheet_36: 800770403
+      13_vortex_spritesheet_360: -1329868458
+      13_vortex_spritesheet_361: -2017949262
+      13_vortex_spritesheet_37: 1469287449
+      13_vortex_spritesheet_38: 922718011
+      13_vortex_spritesheet_39: -1519286857
+      13_vortex_spritesheet_4: 101843414
+      13_vortex_spritesheet_40: -146387690
+      13_vortex_spritesheet_41: 191306160
+      13_vortex_spritesheet_42: -275171155
+      13_vortex_spritesheet_43: -578761283
+      13_vortex_spritesheet_44: 1526332505
+      13_vortex_spritesheet_45: 1676858096
+      13_vortex_spritesheet_46: 1107112041
+      13_vortex_spritesheet_47: 525310061
+      13_vortex_spritesheet_48: -330243807
+      13_vortex_spritesheet_49: -1436606538
+      13_vortex_spritesheet_5: 1559675491
+      13_vortex_spritesheet_50: 89822605
+      13_vortex_spritesheet_51: -1879471099
+      13_vortex_spritesheet_52: 95035421
+      13_vortex_spritesheet_53: -1034754463
+      13_vortex_spritesheet_54: 190725041
+      13_vortex_spritesheet_55: 1064829231
+      13_vortex_spritesheet_56: -1883231332
+      13_vortex_spritesheet_57: 55514694
+      13_vortex_spritesheet_58: -2102382219
+      13_vortex_spritesheet_59: 1539822539
+      13_vortex_spritesheet_6: -354121685
+      13_vortex_spritesheet_60: 139698945
+      13_vortex_spritesheet_61: -96437512
+      13_vortex_spritesheet_62: 370446627
+      13_vortex_spritesheet_63: 164746946
+      13_vortex_spritesheet_64: 719178751
+      13_vortex_spritesheet_65: 408936484
+      13_vortex_spritesheet_66: -1782496938
+      13_vortex_spritesheet_67: 1608306330
+      13_vortex_spritesheet_68: 1318984773
+      13_vortex_spritesheet_69: -1385749343
+      13_vortex_spritesheet_7: -1389319329
+      13_vortex_spritesheet_70: -1664420736
+      13_vortex_spritesheet_71: 1513206527
+      13_vortex_spritesheet_72: -1397527734
+      13_vortex_spritesheet_73: -1725575334
+      13_vortex_spritesheet_74: 1079601153
+      13_vortex_spritesheet_75: -1234251814
+      13_vortex_spritesheet_76: 987134804
+      13_vortex_spritesheet_77: 655255525
+      13_vortex_spritesheet_78: 1952430930
+      13_vortex_spritesheet_79: 1611908226
+      13_vortex_spritesheet_8: -804303006
+      13_vortex_spritesheet_80: 681350154
+      13_vortex_spritesheet_81: -1662123724
+      13_vortex_spritesheet_82: 459984381
+      13_vortex_spritesheet_83: -1430800270
+      13_vortex_spritesheet_84: -1330161796
+      13_vortex_spritesheet_85: 258586042
+      13_vortex_spritesheet_86: -1935930923
+      13_vortex_spritesheet_87: 1388202320
+      13_vortex_spritesheet_88: -6393252
+      13_vortex_spritesheet_89: -651833366
+      13_vortex_spritesheet_9: 291342834
+      13_vortex_spritesheet_90: -230205901
+      13_vortex_spritesheet_91: -154332516
+      13_vortex_spritesheet_92: -1683689721
+      13_vortex_spritesheet_93: -1656893562
+      13_vortex_spritesheet_94: 1570648566
+      13_vortex_spritesheet_95: -972132078
+      13_vortex_spritesheet_96: 1034996049
+      13_vortex_spritesheet_97: 915991059
+      13_vortex_spritesheet_98: -998629998
+      13_vortex_spritesheet_99: 729970480
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
