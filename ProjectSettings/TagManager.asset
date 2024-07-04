@@ -58,6 +58,9 @@ TagManager:
   - name: Staff
     uniqueID: 625383177
     locked: 0
+  - name: Cube
+    uniqueID: 2474212263
+    locked: 0
   - name: Player
     uniqueID: 2212547545
     locked: 0
