@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.TextCore.Text;
+using UnityEngine.Animations;
 
 public class PlayerBiggani : MonoBehaviour
 {
@@ -15,27 +17,23 @@ public class PlayerBiggani : MonoBehaviour
     public float DashTime;
     private bool once;
     public GameObject currentWeapon;
-
-    public HealthBar playerHealth; // Reference to the HealthBar script
-
     private void Start()
     {
-        rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
-        playerHealth = GetComponent<HealthBar>(); // Assuming HealthBar is attached to the same GameObject
     }
+
 
     private void Update()
     {
-        // Movement
+        //di chuyển
         moveInput.x = Input.GetAxisRaw("Horizontal");
         moveInput.y = Input.GetAxisRaw("Vertical");
-        rb.velocity = moveInput.normalized * moveSpeed;
+        transform.position += moveSpeed * Time.deltaTime * moveInput;
 
-        // Animation
+        //animation
         animator.SetFloat("Speed", moveInput.sqrMagnitude);
 
-        // Dash
+        //dash
         if (Input.GetKeyDown(KeyCode.LeftShift) && dashTime <= 0)
         {
             animator.SetBool("Dash", true);
@@ -55,18 +53,21 @@ public class PlayerBiggani : MonoBehaviour
             dashTime -= Time.deltaTime;
         }
 
-        // Flip character based on movement direction
         if (moveInput.x != 0)
         {
-            transform.localScale = new Vector3(Mathf.Sign(moveInput.x), 1, 1);
+            if (moveInput.x < 0)
+            {
+                transform.localScale = new Vector3(-1, 1, 0);
+            }
+            else
+            {
+                transform.localScale = new Vector3(1, 1, 0);
+            }
         }
-
-        // Attack (assuming Mouse0 is left mouse button)
+        //danh tay
         if (Input.GetKeyDown(KeyCode.Mouse0))
         {
             animator.SetBool("DanhTay", true);
-            // Logic for attacking (e.g., dealing damage to enemies)
-            Attack();
         }
         else
         {
@@ -74,32 +75,36 @@ public class PlayerBiggani : MonoBehaviour
         }
     }
 
-    void Attack()
-    {
-        // Placeholder logic for attacking
-        // You can add more sophisticated logic here (e.g., check for enemies in range)
-        Debug.Log("Attacking!");
-
-        // Example: If there's a current weapon, show it
-        ShowCurrentWeapon();
-    }
-
-    // Function to show the current weapon (you might need to adjust this based on your game logic)
     public void ShowCurrentWeapon()
     {
         if (currentWeapon != null)
         {
-            currentWeapon.SetActive(true); // Show the current weapon
-            currentWeapon = null; // Clear the reference to prevent showing it again
+            currentWeapon.SetActive(true); // Hiển thị vũ khí có sẵn
+            currentWeapon = null; // Xóa reference để ngăn cản việc hiển thị lại
         }
     }
 
-    // Function to take damage
+    public PlayerHealth playerHealth;
     public void TakeDamage(int damage)
     {
-        if (playerHealth != null)
-        {
-            playerHealth.TakeDamage(damage); // Call the TakeDamage function of the HealthBar
-        }
+        playerHealth.TakeDame(damage);
+    }
+
+    //Boots Speed
+    public void ApplyExtraSpeed(float speedBoost, float duration)
+    {
+        StartCoroutine(ExtraSpeedCoroutine(speedBoost, duration));
+    }
+
+    private IEnumerator ExtraSpeedCoroutine(float speedBoost, float duration)
+    {
+        // Tăng tốc độ
+        moveSpeed += speedBoost;
+
+        // Chờ đợi cho đến khi hết thời hạn
+        yield return new WaitForSeconds(duration);
+
+        // Giảm tốc độ trở lại như ban đầu
+        moveSpeed -= speedBoost;
     }
 }

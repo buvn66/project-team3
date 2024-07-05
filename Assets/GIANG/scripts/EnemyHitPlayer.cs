@@ -31,7 +31,7 @@ public class EnemyHitPlayer : MonoBehaviour
         int damage = UnityEngine.Random.Range(minDamage, maxDamage + 1);
         if (player != null)
         {
-            player.TakeDamage(damage);
+            //player.Take;
         }
     }
 }
