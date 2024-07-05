@@ -8,6 +8,8 @@ public class Weapon : MonoBehaviour
     private bool canPickUp = false;
     public GameObject weaponInfoCanvas;
     public float displayTime = 10f;
+    public GameObject enemyPrefabToSpawn; // Prefab của enemy cần spawn khi player nhấn F
+
     void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
@@ -17,6 +19,7 @@ public class Weapon : MonoBehaviour
             StartCoroutine(ShowCanvasForTime()); // Bắt đầu Coroutine để hiển thị Canvas và tự động đóng lại
         }
     }
+
     void OnTriggerExit2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
@@ -29,6 +32,7 @@ public class Weapon : MonoBehaviour
             }
         }
     }
+
     IEnumerator ShowCanvasForTime()
     {
         // Hiển thị Canvas
@@ -46,6 +50,7 @@ public class Weapon : MonoBehaviour
             weaponInfoCanvas.SetActive(false);
         }
     }
+
     void Update()
     {
         if (playerInRange && canPickUp)
@@ -56,9 +61,16 @@ public class Weapon : MonoBehaviour
             }
         }
     }
+
     void PickUpWeapon()
     {
         Destroy(gameObject);
         GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerBiggani>().ShowCurrentWeapon();
+
+        // Spawn enemy prefab
+        if (enemyPrefabToSpawn != null)
+        {
+            Instantiate(enemyPrefabToSpawn, transform.position, Quaternion.identity);
+        }
     }
 }
