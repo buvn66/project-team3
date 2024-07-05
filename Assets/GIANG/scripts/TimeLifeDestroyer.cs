@@ -7,11 +7,14 @@ public class TimeLifeDestroyer : MonoBehaviour
     private Animator animator;
     public float AnimationDuration = 2f;
     private bool hasHit = false;
+    public GameObject spawnObjectPrefab; // GameObject để spawn khi enemy bị destroy
+
     void Start()
     {
         animator = GetComponent<Animator>();
         Destroy(gameObject, AnimationDuration + 0.1f);
     }
+
     void OnTriggerEnter2D(Collider2D other)
     {
         if (!hasHit)
@@ -20,7 +23,8 @@ public class TimeLifeDestroyer : MonoBehaviour
             {
                 hasHit = true;
                 Destroy(other.gameObject);
-                transform.position = other.transform.position;
+                SpawnSpawnObject(other.transform.position); // Gọi hàm để spawn game object mới
+
                 Rigidbody2D rb = GetComponent<Rigidbody2D>();
                 if (rb != null)
                 {
@@ -34,6 +38,14 @@ public class TimeLifeDestroyer : MonoBehaviour
                     StartCoroutine(WaitForAnimationFinish());
                 }
             }
+        }
+    }
+
+    void SpawnSpawnObject(Vector3 spawnPosition)
+    {
+        if (spawnObjectPrefab != null)
+        {
+            Instantiate(spawnObjectPrefab, spawnPosition, Quaternion.identity);
         }
     }
 

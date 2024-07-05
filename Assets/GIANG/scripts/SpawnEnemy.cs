@@ -4,48 +4,43 @@ using UnityEngine;
 
 public class SpawnEnemy : MonoBehaviour
 {
-    public GameObject enemyPrefab; // Prefab của enemy cần spawn
-    public int spawnCount = 10; // Số lượng enemy cần spawn
-    public float spawnRate = 1.5f; // Thời gian giữa các lần spawn
-    public float spawnRadius = 5f; // Bán kính xung quanh spawner để spawn enemy
+    public GameObject EnemyPrefab; // Đổi tên biến từ EnemyPrefabs thành EnemyPrefab vì chỉ spawn 1 loại enemy
+    public int numberOfEnemiesToSpawn = 10; // Số lượng enemy cần spawn
+    public float spawnRate = 1.5f;
+    public float spawnRadius = 5f;
 
-    private int enemiesSpawned = 0; // Số lượng enemy đã spawn
-    private float spawnTimer = 0f; // Đếm thời gian giữa các lần spawn
-    private bool isSpawning = true; // Biến để kiểm tra xem có đang spawn enemy hay không
+    private float spawnTimer = 0f;
+    private int enemiesSpawned = 0;
+    private bool isSpawning = true;
 
     void Update()
     {
         if (isSpawning)
         {
-            spawnTimer += Time.deltaTime; // Tăng spawnTimer theo thời gian thực
-            if (spawnTimer >= spawnRate && enemiesSpawned < spawnCount)
+            spawnTimer += Time.deltaTime;
+            if (spawnTimer >= spawnRate && enemiesSpawned < numberOfEnemiesToSpawn)
             {
-                spawnEnemy(); // Gọi hàm spawnEnemy để spawn enemy
-                spawnTimer = 0f; // Reset spawnTimer sau khi spawn
-                enemiesSpawned++; // Tăng số lượng enemy đã spawn
+                spawnEnemy();
+                spawnTimer = 0f;
+                enemiesSpawned++;
             }
 
-            // Kiểm tra nếu đã spawn đủ số lượng enemy thì tắt isSpawning
-            if (enemiesSpawned >= spawnCount)
+            // Kiểm tra xem đã spawn đủ số lượng enemy chưa
+            if (enemiesSpawned >= numberOfEnemiesToSpawn)
             {
-                isSpawning = false;
+                isSpawning = false; // Tắt chế độ spawn khi đã đủ số lượng
             }
         }
     }
-
-    void spawnEnemy()
-    {
-        // Tính toán vị trí ngẫu nhiên xung quanh spawner
-        Vector2 randomPosition = (Vector2)transform.position + Random.insideUnitCircle.normalized * spawnRadius;
-
-        // Spawn enemy tại vị trí ngẫu nhiên tính được
-        Instantiate(enemyPrefab, randomPosition, Quaternion.identity);
-    }
-
-    // Vẽ hình cầu màu vàng xung quanh spawner trong Scene Editor
     private void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.yellow;
         Gizmos.DrawWireSphere(transform.position, spawnRadius);
+    }
+    void spawnEnemy()
+    {
+        Vector2 randomPosition = (Vector2)transform.position + Random.insideUnitCircle.normalized * spawnRadius;
+
+        Instantiate(EnemyPrefab, randomPosition, Quaternion.identity);
     }
 }

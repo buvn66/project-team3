@@ -4,34 +4,41 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    public GameObject EnemyPrefabs;
-    public float spawnRate = 1.5f;
-    public float spawnRadius = 5f;
-    private float spawnTimes = 0f;
+    public float moveSpeed = 2f;
+    private Transform playerTransform;
+
     void Start()
     {
-
+        GameObject playerobject = GameObject.FindGameObjectWithTag("Player");
+        if (playerobject == null)
+        {
+            playerobject = FindObjectOfType<GameObject>();
+        }
+        if (playerobject != null)
+        {
+            playerTransform = playerobject.transform;
+        }
+        else
+        {
+            Debug.Log("No player");
+        }
     }
 
     // Update is called once per frame
     void Update()
     {
-        spawnTimes += Time.deltaTime;
-        if (spawnTimes >= spawnRate)
+        if (playerTransform != null)
         {
-            spawnEnemy();
-            spawnTimes = 0f;
+            Vector3 direction = (playerTransform.position - transform.position).normalized;
+            transform.Translate(direction * moveSpeed * Time.deltaTime);
         }
     }
-    private void OnDrawGizmosSelected()
-    {
-        Gizmos.color = Color.yellow;
-        Gizmos.DrawWireSphere(transform.position, spawnRadius);
-    }
-    void spawnEnemy()
-    {
-        Vector2 randomPosition = (Vector2)transform.position + Random.insideUnitCircle.normalized * spawnRadius;
-
-        Instantiate(EnemyPrefabs, randomPosition, Quaternion.identity);
-    }
+    //private void OnTriggerEnter2D(Collider2D collision)
+    //{
+        //if (collision.tag == "Bullet")
+        //{
+            //Destroy(gameObject);
+            //collision.tag == "Enemy";
+       //}
+    //}
 }

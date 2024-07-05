@@ -12,11 +12,11 @@ GameObject:
   - component: {fileID: 7072000709874886334}
   m_Layer: 0
   m_Name: EnemySpawn
-  m_TagString: Untagged
+  m_TagString: EnemySpawn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &8698066423504332971
 Transform:
   m_ObjectHideFlags: 0
@@ -44,7 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8fe36189ff36f13489beea88414ef2fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyPrefab: {fileID: 6686300492999664560, guid: e3a6112e8417db1468b281a660b22f9f, type: 3}
-  spawnCount: 10
+  EnemyPrefab: {fileID: 6686300492999664560, guid: e3a6112e8417db1468b281a660b22f9f, type: 3}
+  numberOfEnemiesToSpawn: 10
   spawnRate: 1.5
   spawnRadius: 5
