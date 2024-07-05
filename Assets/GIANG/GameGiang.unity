@@ -7726,8 +7726,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 999999
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: c3367be55488be14380571b6d5e061bd, type: 2}
+  m_sharedMaterial: {fileID: 8099551682999289081, guid: c3367be55488be14380571b6d5e061bd, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -8059,8 +8059,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1638, y: -561}
-  m_SizeDelta: {x: 348.6433, y: 283.8544}
+  m_AnchoredPosition: {x: 1640.8096, y: -603.1464}
+  m_SizeDelta: {x: 354.2625, y: 368.1472}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &902313489
 MonoBehaviour:
@@ -8274,8 +8274,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 283, y: -52.297}
-  m_SizeDelta: {x: 330.97, y: 309.232}
+  m_AnchoredPosition: {x: 339, y: -162.33624}
+  m_SizeDelta: {x: 284.2869, y: 269.2181}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1019890507
 MonoBehaviour:
@@ -8808,8 +8808,8 @@ MonoBehaviour:
   m_text: "Hellfire Wand\nB\u1EAFn ra ng\u1ECDn l\u1EEDa h\u1EE7y di\u1EC7t nh\u1EEFng
     k\u1EBB ch\u1ECBu \u0111\xF2n t\u1EEB n\xF3"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: c3367be55488be14380571b6d5e061bd, type: 2}
+  m_sharedMaterial: {fileID: 8099551682999289081, guid: c3367be55488be14380571b6d5e061bd, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -8872,7 +8872,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &1404153319
@@ -9545,11 +9545,11 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 675429969}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -8.062271, y: -13.239967}
-  m_SizeDelta: {x: 200, y: 50}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 0.5, y: 0.42873982}
+  m_AnchorMax: {x: 0.5, y: 0.42873982}
+  m_AnchoredPosition: {x: 0.000030517578, y: 1.806221}
+  m_SizeDelta: {x: 371.3843, y: 91.093}
+  m_Pivot: {x: 0.5, y: 0.49999997}
 --- !u!114 &1963835637
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9572,8 +9572,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 100/100
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: c3367be55488be14380571b6d5e061bd, type: 2}
+  m_sharedMaterial: {fileID: 8099551682999289081, guid: c3367be55488be14380571b6d5e061bd, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -9597,15 +9597,15 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 80
+  m_fontSizeBase: 80
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 1
   m_HorizontalAlignment: 2
-  m_VerticalAlignment: 512
+  m_VerticalAlignment: 1024
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
