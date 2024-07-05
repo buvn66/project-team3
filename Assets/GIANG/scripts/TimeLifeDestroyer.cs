@@ -9,6 +9,9 @@ public class TimeLifeDestroyer : MonoBehaviour
     private bool hasHit = false;
     public GameObject spawnObjectPrefab; // GameObject để spawn khi enemy bị destroy
 
+    // Reference đến EnemyManager
+    public Challenge challenge;
+
     void Start()
     {
         animator = GetComponent<Animator>();
@@ -41,6 +44,7 @@ public class TimeLifeDestroyer : MonoBehaviour
         }
     }
 
+    // Phương thức để spawn GameObject mới
     void SpawnSpawnObject(Vector3 spawnPosition)
     {
         if (spawnObjectPrefab != null)
@@ -54,5 +58,11 @@ public class TimeLifeDestroyer : MonoBehaviour
     {
         yield return new WaitForSeconds(AnimationDuration);
         Destroy(gameObject); // Hủy viên đạn sau khi kết thúc animation
+
+        // Gọi phương thức EnemyDestroyed của EnemyManager nếu đã được gán
+        if (challenge != null)
+        {
+            challenge.EnemyDestroyed();
+        }
     }
 }

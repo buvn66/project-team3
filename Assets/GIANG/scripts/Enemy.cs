@@ -35,10 +35,10 @@ public class Enemy : MonoBehaviour
     }
     //private void OnTriggerEnter2D(Collider2D collision)
     //{
-        //if (collision.tag == "Bullet")
-        //{
-            //Destroy(gameObject);
-            //collision.tag == "Enemy";
-       //}
+    //if (collision.tag == "Bullet")
+    //{
+    //Destroy(gameObject);
+    //collision.tag == "Enemy";
+    //}
     //}
 }
