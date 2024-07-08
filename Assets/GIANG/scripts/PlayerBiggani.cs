@@ -22,7 +22,11 @@ public class PlayerBiggani : MonoBehaviour
         animator = GetComponent<Animator>();
     }
 
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> f13587d0ec793d1aa51335840499e723e7039b74
     private void Update()
     {
         //di chuyển
@@ -83,6 +87,7 @@ public class PlayerBiggani : MonoBehaviour
             currentWeapon = null; // Xóa reference để ngăn cản việc hiển thị lại
         }
     }
+<<<<<<< HEAD
 
     public PlayerHealth playerHealth;
     public void TakeDamage(int damage)
@@ -108,3 +113,6 @@ public class PlayerBiggani : MonoBehaviour
         moveSpeed -= speedBoost;
     }
 }
+=======
+}
+>>>>>>> f13587d0ec793d1aa51335840499e723e7039b74

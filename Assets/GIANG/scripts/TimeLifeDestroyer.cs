@@ -1,9 +1,14 @@
+<<<<<<< HEAD
 ﻿using System.Collections;
+=======
+using System.Collections;
+>>>>>>> f13587d0ec793d1aa51335840499e723e7039b74
 using System.Collections.Generic;
 using UnityEngine;
 
 public class TimeLifeDestroyer : MonoBehaviour
 {
+<<<<<<< HEAD
     private Animator animator;
     public float AnimationDuration = 2f;
     private bool hasHit = false;
@@ -64,5 +69,12 @@ public class TimeLifeDestroyer : MonoBehaviour
         {
             challenge.EnemyDestroyed();
         }
+=======
+    public float LifeTime = 2f;
+
+    private void Start()
+    {
+        Destroy(this.gameObject, LifeTime);
+>>>>>>> f13587d0ec793d1aa51335840499e723e7039b74
     }
 }

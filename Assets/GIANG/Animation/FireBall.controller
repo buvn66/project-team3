@@ -10,8 +10,12 @@ AnimatorState:
   m_Name: FireBall
   m_Speed: 1
   m_CycleOffset: 0
+<<<<<<< HEAD
   m_Transitions:
   - {fileID: -3575746617380273781}
+=======
+  m_Transitions: []
+>>>>>>> f13587d0ec793d1aa51335840499e723e7039b74
   m_StateMachineBehaviours: []
   m_Position: {x: 50, y: 50, z: 0}
   m_IKOnFeet: 0
@@ -27,6 +31,7 @@ AnimatorState:
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
   m_TimeParameter: 
+<<<<<<< HEAD
 --- !u!1101 &-3575746617380273781
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
@@ -52,6 +57,8 @@ AnimatorStateTransition:
   m_InterruptionSource: 0
   m_OrderedInterruption: 1
   m_CanTransitionToSelf: 1
+=======
+>>>>>>> f13587d0ec793d1aa51335840499e723e7039b74
 --- !u!91 &9100000
 AnimatorController:
   m_ObjectHideFlags: 0
@@ -60,6 +67,7 @@ AnimatorController:
   m_PrefabAsset: {fileID: 0}
   m_Name: FireBall
   serializedVersion: 5
+<<<<<<< HEAD
   m_AnimatorParameters:
   - m_Name: HitEnemy
     m_Type: 9
@@ -67,6 +75,9 @@ AnimatorController:
     m_DefaultInt: 0
     m_DefaultBool: 0
     m_Controller: {fileID: 9100000}
+=======
+  m_AnimatorParameters: []
+>>>>>>> f13587d0ec793d1aa51335840499e723e7039b74
   m_AnimatorLayers:
   - serializedVersion: 5
     m_Name: Base Layer
@@ -80,6 +91,7 @@ AnimatorController:
     m_IKPass: 0
     m_SyncedLayerAffectsTiming: 0
     m_Controller: {fileID: 9100000}
+<<<<<<< HEAD
 --- !u!1102 &4045335803476535392
 AnimatorState:
   serializedVersion: 6
@@ -106,6 +118,8 @@ AnimatorState:
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
   m_TimeParameter: 
+=======
+>>>>>>> f13587d0ec793d1aa51335840499e723e7039b74
 --- !u!1107 &4924875198299935693
 AnimatorStateMachine:
   serializedVersion: 6
@@ -117,10 +131,14 @@ AnimatorStateMachine:
   m_ChildStates:
   - serializedVersion: 1
     m_State: {fileID: -8095873525171540608}
+<<<<<<< HEAD
     m_Position: {x: 30, y: 190, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 4045335803476535392}
     m_Position: {x: 340, y: 190, z: 0}
+=======
+    m_Position: {x: 300, y: 120, z: 0}
+>>>>>>> f13587d0ec793d1aa51335840499e723e7039b74
   m_ChildStateMachines: []
   m_AnyStateTransitions: []
   m_EntryTransitions: []
