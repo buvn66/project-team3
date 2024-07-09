@@ -6,6 +6,8 @@ TagManager:
   tags:
   - house
   - tree
+  - bullet
+  - gate
   layers:
   - Default
   - TransparentFX
@@ -52,6 +54,6 @@ TagManager:
   - name: UI
     uniqueID: 1007062753
     locked: 0
-  - name: 
+  - name: tilemap
     uniqueID: 4116005073
     locked: 0
