@@ -1,6 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
+using UnityEngine.SceneManagement;
+using UnityEngine.U2D;
+using System;
 
 public class Playercontroller : MonoBehaviour
 {
