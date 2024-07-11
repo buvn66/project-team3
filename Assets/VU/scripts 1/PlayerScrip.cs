@@ -7,12 +7,16 @@ public class PlayerScript : MonoBehaviour
     private Rigidbody2D rb;
     private Animator anim;
     private float moveInput;
-    public float speed; // Tốc độ
+    public float speed; // Tốc độ di chuyển
     public float jumpForce = 5f; // Lực nhảy
     private bool isFacingRight = true; // Biến để xác định hướng của nhân vật
     private bool isGrounded; // Kiểm tra xem nhân vật có đang ở trên mặt đất không
     public Animator myAnim;
     public bool isAttacking = false;
+    public GameObject attackPoint; // Điểm tấn công
+    public float radius; // Bán kính tấn công
+    public LayerMask enemies; // Layer của đối tượng quân địch
+    public float damage;
 
     public static PlayerScript instance;
 
@@ -32,15 +36,50 @@ public class PlayerScript : MonoBehaviour
     {
         HandleMovement();
         HandleJumping();
-        Attack();
-    }
-    void Attack()
-    {
-        if (Input.GetKeyDown(KeyCode.B) && !isAttacking)
+
+        // Xử lý tấn công khi nhấn chuột trái
+        if (Input.GetMouseButtonDown(0) && !isAttacking)
         {
             isAttacking = true;
+            myAnim.SetBool("Attack", true); // Kích hoạt animation tấn công
+            Attack(); // Gọi hàm xử lý tấn công
+        }
+
+        // Cập nhật animation di chuyển
+        UpdateAnimation();
+    }
+
+    // Phương thức tấn công
+    void Attack()
+    {
+        Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.transform.position, radius, enemies);
+        foreach (Collider2D enemy in hitEnemies)
+        {
+            Debug.Log("Hit enemy: " + enemy.name);
+            enemy.GetComponent<Enemyheath>().heath -= damage; // Sửa lỗi đoạn này
+            // Thêm logic xử lý sát thương vào đây nếu cần
         }
     }
+
+    // Phương thức kết thúc animation tấn công
+    public void EndAttack()
+    {
+        isAttacking = false;
+        myAnim.SetBool("Attack", false);
+    }
+
+    private void OnDrawGizmos()
+    {
+        Gizmos.DrawWireSphere(attackPoint.transform.position, radius);
+    }
+
+    // Cập nhật animation di chuyển
+    void UpdateAnimation()
+    {
+        bool isMoving = Mathf.Abs(moveInput) > 0.1f;
+        anim.SetBool("ismove", isMoving);
+    }
+
     // Phương thức xử lý di chuyển
     void HandleMovement()
     {
@@ -50,13 +89,9 @@ public class PlayerScript : MonoBehaviour
 
         // Xác định hướng di chuyển và cập nhật hình dạng của nhân vật
         Flip();
-
-        // Cập nhật animation
-        bool isMoving = Mathf.Abs(moveInput) > 0.1f;
-        anim.SetBool("ismove", isMoving);
     }
 
-    // Phương thức để xử lý nhảy
+    // Phương thức xử lý nhảy
     void HandleJumping()
     {
         if (isGrounded && Input.GetKeyDown(KeyCode.Space))
@@ -64,12 +99,9 @@ public class PlayerScript : MonoBehaviour
             rb.velocity = new Vector2(rb.velocity.x, jumpForce);
             isGrounded = false; // Đặt isGrounded thành false ngay khi nhảy lên
         }
-
-        // Cập nhật animation cho nhảy
-        //anim.SetBool("isJumping", !isGrounded);
     }
 
-    // Phương thức để đảo ngược hình dạng của nhân vật
+    // Phương thức đảo ngược hình dạng của nhân vật
     void Flip()
     {
         if (isFacingRight && moveInput < 0 || !isFacingRight && moveInput > 0)
@@ -81,7 +113,7 @@ public class PlayerScript : MonoBehaviour
         }
     }
 
-    // Kiểm tra va chạm với mặt đất để đặt isGrounded thành true
+    // Phương thức va chạm với mặt đất để đặt isGrounded thành true
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("ground"))
