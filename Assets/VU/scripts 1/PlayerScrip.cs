@@ -66,7 +66,7 @@ public class PlayerScript : MonoBehaviour
         }
 
         // Cập nhật animation cho nhảy
-        anim.SetBool("isJumping", !isGrounded);
+        //anim.SetBool("isJumping", !isGrounded);
     }
 
     // Phương thức để đảo ngược hình dạng của nhân vật
