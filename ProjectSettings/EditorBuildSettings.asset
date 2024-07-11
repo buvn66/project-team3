@@ -8,4 +8,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/KHANG/patform map.unity
+    guid: 881c04bc9644ff74ca74f0f85faa58b4
   m_configObjects: {}
