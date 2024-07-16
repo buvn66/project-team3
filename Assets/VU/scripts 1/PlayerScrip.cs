@@ -56,8 +56,11 @@ public class PlayerScript : MonoBehaviour
         foreach (Collider2D enemy in hitEnemies)
         {
             Debug.Log("Hit enemy: " + enemy.name);
-            enemy.GetComponent<Enemyheath>().heath -= damage; // Sửa lỗi đoạn này
-            // Thêm logic xử lý sát thương vào đây nếu cần
+            Enemyheath enemyHeath = enemy.GetComponent<Enemyheath>();
+            if (enemyHeath != null)
+            {
+                enemyHeath.heath -= damage; // Trừ đi lượng máu của kẻ thù
+            }
         }
     }
 

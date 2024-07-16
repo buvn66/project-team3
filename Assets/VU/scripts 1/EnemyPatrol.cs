@@ -1,53 +1,61 @@
-﻿using UnityEngine;
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.UIElements;
 
 public class EnemyPatrol : MonoBehaviour
 {
-    public float moveSpeed = 2f; // Tốc độ di chuyển của quái
-    public float start, end; // điểm bắt đầu , điểm kết thúc 
-    private Vector3 targetPosition; // Vị trí mục tiêu để di chuyển đến
-
+    public GameObject pointA;
+    public GameObject pointB;
+    private Rigidbody2D rb;
+    private Animator anim;
+    private Transform currentPoint;
+    public float speed;
+    // Start is called before the first frame update
     void Start()
     {
-        // Ban đầu quái vật sẽ di chuyển tới điểm bắt đầu
-        targetPosition = new Vector3(start, transform.position.y, transform.position.z);
+        rb = GetComponent<Rigidbody2D>();
+        anim = GetComponent<Animator>();
+        currentPoint = pointB.transform;
+        anim.SetBool("runing", true);
     }
 
+    // Update is called once per frame
     void Update()
     {
-        // Di chuyển con quái vật đến vị trí mục tiêu
-        MoveToTarget();
+        Vector2 point = currentPoint.position - transform.position;
+        if (currentPoint == pointB.transform)
+        {
+            rb.velocity = new Vector2(speed, 0);
+        }
+        else
+        {
+            rb.velocity = new Vector2(-speed, 0);
+        }
+        if (Vector2.Distance(transform.position, currentPoint.position) < 0.5f && currentPoint == pointB.transform)
+        {
+            Flip();
+            currentPoint = pointA.transform;
+        }
+        if (Vector2.Distance(transform.position, currentPoint.position) < 0.5f && currentPoint == pointA.transform)
+        {
+            Flip();
+            currentPoint = pointB.transform;
+        }
     }
-
-    // Hàm di chuyển con quái vật đến vị trí mục tiêu
-    void MoveToTarget()
+    private void Flip()
     {
-        // Tính toán hướng di chuyển của quái vật
-        Vector3 moveDirection = (targetPosition - transform.position).normalized;
-        transform.Translate(moveDirection * moveSpeed * Time.deltaTime);
-
-        // Xoay mặt quái vật theo hướng di chuyển
-        if (moveDirection.x > 0)
+        Vector3 localScale = transform.localScale;
+        localScale.x *= -1;
+        transform.localScale = localScale;
+    }
+    private void OnDrawGizmos()
+    {
+        if (rb != null)
         {
-            transform.localScale = new Vector3(1, transform.localScale.y, transform.localScale.z);
-        }
-        else if (moveDirection.x < 0)
-        {
-            transform.localScale = new Vector3(-1, transform.localScale.y, transform.localScale.z);
-        }
-
-        // Kiểm tra nếu quái vật đã gần đến vị trí mục tiêu, thay đổi mục tiêu mới
-        if (Mathf.Abs(transform.position.x - targetPosition.x) < 0.1f)
-        {
-            // Đổi hướng di chuyển tới điểm kết thúc nếu đã đến điểm bắt đầu
-            if (targetPosition.x == start)
-            {
-                targetPosition.x = end;
-            }
-            // Đổi hướng di chuyển tới điểm bắt đầu nếu đã đến điểm kết thúc
-            else if (targetPosition.x == end)
-            {
-                targetPosition.x = start;
-            }
+            Gizmos.DrawWireSphere(pointA.transform.position, 0.5f);
+            Gizmos.DrawWireSphere(pointB.transform.position, 0.5f);
+            Gizmos.DrawLine(pointA.transform.position, pointB.transform.position);
         }
     }
 }
