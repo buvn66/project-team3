@@ -20290,8 +20290,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyPrefabs: {fileID: 2752627666654981237, guid: 7dd76bc482405c44d812f647122bdfe3, type: 3}
   spawnRarte: 1
-  spawnRadius: 5.94
-  spawnTimer: 99
+  spawnRadius: 1.38
+  spawnTimer: 0.1
 --- !u!1 &1280291329
 GameObject:
   m_ObjectHideFlags: 0
