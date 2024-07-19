@@ -25,8 +25,9 @@ public class PlayerScript : MonoBehaviour
 
     [SerializeField] private TrailRenderer tr;
 
-    // Thêm biến để lưu âm thanh nhảy
+    // Thêm biến để lưu âm thanh nhảy và dashing
     public AudioClip jumpSound;
+    public AudioClip dashSound; // Âm thanh dashing
     private AudioSource audioSource;
 
     public static PlayerScript instance;
@@ -42,6 +43,20 @@ public class PlayerScript : MonoBehaviour
         anim = GetComponent<Animator>();
         myAnim = GetComponent<Animator>();
         audioSource = GetComponent<AudioSource>(); // Lấy thành phần AudioSource
+
+        // Kiểm tra AudioSource và âm thanh được gán đúng chưa
+        if (audioSource == null)
+        {
+            Debug.LogError("AudioSource is missing on the player object.");
+        }
+        if (jumpSound == null)
+        {
+            Debug.LogError("Jump sound is not assigned.");
+        }
+        if (dashSound == null)
+        {
+            Debug.LogError("Dash sound is not assigned.");
+        }
     }
 
     void Update()
@@ -170,6 +185,10 @@ public class PlayerScript : MonoBehaviour
         rb.gravityScale = 0f;
         rb.velocity = new Vector2(transform.localScale.x * dashingPower, 0f);
         tr.emitting = true;
+
+        // Phát âm thanh dashing ngay lập tức
+        audioSource.PlayOneShot(dashSound);
+
         yield return new WaitForSeconds(dashingTime);
         tr.emitting = false;
         rb.gravityScale = originalGravity;
