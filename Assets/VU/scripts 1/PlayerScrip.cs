@@ -17,6 +17,17 @@ public class PlayerScript : MonoBehaviour
     public float radius; // Bán kính tấn công
     public LayerMask enemies; // Layer của đối tượng quân địch
     public float damage;
+    private bool canDash = true;
+    private bool isDashing;
+    private float dashingPower = 5f;
+    private float dashingTime = 0.2f;
+    private float dashingCooldown = 1f;
+
+    [SerializeField] private TrailRenderer tr;
+
+    // Thêm biến để lưu âm thanh nhảy
+    public AudioClip jumpSound;
+    private AudioSource audioSource;
 
     public static PlayerScript instance;
 
@@ -30,10 +41,15 @@ public class PlayerScript : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         myAnim = GetComponent<Animator>();
+        audioSource = GetComponent<AudioSource>(); // Lấy thành phần AudioSource
     }
 
     void Update()
     {
+        if (isDashing)
+        {
+            return;
+        }
         HandleMovement();
         HandleJumping();
 
@@ -44,9 +60,21 @@ public class PlayerScript : MonoBehaviour
             myAnim.SetBool("Attack", true); // Kích hoạt animation tấn công
             Attack(); // Gọi hàm xử lý tấn công
         }
+        if (Input.GetKeyDown(KeyCode.LeftShift) && canDash)
+        {
+            StartCoroutine(Dash());
+        }
 
         // Cập nhật animation di chuyển
         UpdateAnimation();
+    }
+
+    private void FixedUpdate()
+    {
+        if (isDashing)
+        {
+            return;
+        }
     }
 
     // Phương thức tấn công
@@ -116,12 +144,13 @@ public class PlayerScript : MonoBehaviour
         }
     }
 
-    // Phương thức va chạm với mặt đất để đặt isGrounded thành true
+    // Phương thức va chạm với mặt đất để đặt isGrounded thành true và phát âm thanh nhảy
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("ground"))
         {
             isGrounded = true;
+            audioSource.PlayOneShot(jumpSound); // Phát âm thanh nhảy khi chạm đất
         }
     }
 
@@ -131,5 +160,21 @@ public class PlayerScript : MonoBehaviour
         {
             isGrounded = false;
         }
+    }
+
+    private IEnumerator Dash()
+    {
+        canDash = false;
+        isDashing = true;
+        float originalGravity = rb.gravityScale;
+        rb.gravityScale = 0f;
+        rb.velocity = new Vector2(transform.localScale.x * dashingPower, 0f);
+        tr.emitting = true;
+        yield return new WaitForSeconds(dashingTime);
+        tr.emitting = false;
+        rb.gravityScale = originalGravity;
+        isDashing = false;
+        yield return new WaitForSeconds(dashingCooldown);
+        canDash = true;
     }
 }

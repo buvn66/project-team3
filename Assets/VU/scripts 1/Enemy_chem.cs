@@ -5,33 +5,33 @@ using UnityEngine;
 public class Enemy_chem : MonoBehaviour
 {
     #region Biến công khai
-    public Transform rayCast; // Điểm bắt đầu của tia raycast
-    public LayerMask raycastMask; // Lớp mặt nạ để kiểm tra va chạm của raycast
-    public float rayCastLength; // Chiều dài của tia raycast
-    public float attackDistance; // Khoảng cách tấn công của kẻ thù
-    public float followDistance; // Khoảng cách để theo dõi người chơi
-    public float moveSpeed; // Tốc độ di chuyển của kẻ thù
-    public float timer; // Thời gian làm mát (cooldown) cho tấn công
+    public Transform rayCast;
+    public LayerMask raycastMask;
+    public float rayCastLength;
+    public float attackDistance;
+    public float followDistance;
+    public float moveSpeed;
+    public float timer;
     public Transform leftLimit;
     public Transform rightLimit;
     #endregion
 
     #region Biến riêng
-    private RaycastHit2D hit; // Đối tượng lưu thông tin về va chạm của raycast
-    private Transform target; // Mục tiêu (người chơi)
-    private Animator anim; // Bộ điều khiển hoạt hình của kẻ thù
-    private float distance; // Khoảng cách đến mục tiêu
-    private bool attackMode; // Chế độ tấn công
-    private bool inRange; // Biến kiểm tra xem người chơi có trong phạm vi hay không
-    private bool cooling; // Biến kiểm tra xem kẻ thù có đang trong thời gian làm mát hay không
-    private float intTimer; // Biến lưu trữ giá trị thời gian làm mát ban đầu
+    private RaycastHit2D hit;
+    private Transform target;
+    private Animator anim;
+    private float distance;
+    private bool attackMode;
+    private bool inRange;
+    private bool cooling;
+    private float intTimer;
     #endregion 
 
     private void Awake()
     {
         SelectTarget();
-        intTimer = timer; // Khởi tạo thời gian làm mát
-        anim = GetComponent<Animator>(); // Lấy bộ điều khiển hoạt hình từ đối tượng
+        intTimer = timer;
+        anim = GetComponent<Animator>();
     }
 
     void Update()
@@ -46,89 +46,87 @@ public class Enemy_chem : MonoBehaviour
             SelectTarget();
         }
 
-        if (inRange) // Nếu người chơi trong phạm vi
+        if (inRange)
         {
-            hit = Physics2D.Raycast(rayCast.position, transform.right, rayCastLength, raycastMask); // Phát ra tia raycast để kiểm tra va chạm với người chơi
-            RaycastDebugger(); // Gọi hàm để hiển thị tia raycast trong chế độ phát triển
-            // Khi phát hiện người chơi
-            if (hit.collider != null)
+            hit = Physics2D.Raycast(rayCast.position, Vector2.right * (transform.localScale.x > 0 ? 1 : -1), rayCastLength, raycastMask);
+            RaycastDebugger();
+
+            if (hit.collider != null && hit.collider.CompareTag("Player"))
             {
-                EnemyLogic(); // Thực hiện logic của kẻ thù
+                EnemyLogic();
             }
-            else if (hit.collider == null)
+            else
             {
-                inRange = false; // Nếu không có va chạm, người chơi không còn trong phạm vi
-            }
-            if (!inRange == false)
-            {
-                StopAttack(); // Dừng tấn công
+                inRange = false;
+                StopAttack();
             }
         }
     }
 
     private void OnTriggerEnter2D(Collider2D trig)
     {
-        if (trig.gameObject.tag == "Player") // Nếu đối tượng va chạm có tag "Player"
+        if (trig.gameObject.CompareTag("Player"))
         {
-            target = trig.transform; // Thiết lập mục tiêu là người chơi
-            inRange = true; // Đặt biến inRange thành true
+            target = trig.transform;
+            inRange = true;
             Flip();
         }
     }
 
     void EnemyLogic()
     {
-        distance = Vector2.Distance(transform.position, target.position); // Tính khoảng cách đến người chơi
+        distance = Vector2.Distance(transform.position, target.position);
         if (distance > attackDistance)
         {
-            StopAttack(); // Dừng tấn công
+            StopAttack();
         }
         else if (distance <= attackDistance && !cooling)
         {
-            Attack(); // Nếu trong phạm vi tấn công và không đang làm mát, tấn công người chơi
+            Attack();
         }
         if (cooling)
         {
-            anim.SetBool("Attack", false); // Nếu đang làm mát, tắt hoạt hình tấn công
+            anim.SetBool("Attack", false);
         }
     }
 
     void Move()
     {
-        anim.SetBool("canWalk", true); // Bật hoạt hình đi bộ
+        anim.SetBool("canWalk", true);
 
-        if (!anim.GetCurrentAnimatorStateInfo(0).IsName("Skel_attack"))
+        if (!anim.GetCurrentAnimatorStateInfo(0).IsName("Enemy_attack"))
         {
-            Vector2 targetPosition = new Vector2(target.position.x, transform.position.y); // Chỉ di chuyển theo trục x
-            transform.position = Vector2.MoveTowards(transform.position, targetPosition, moveSpeed * Time.deltaTime); // Di chuyển về phía người chơi với tốc độ ổn định
+            Vector2 targetPosition = new Vector2(target.position.x, transform.position.y);
+            transform.position = Vector2.MoveTowards(transform.position, targetPosition, moveSpeed * Time.deltaTime);
         }
     }
 
     void Attack()
     {
-        timer = intTimer; // Đặt lại thời gian làm mát khi người chơi vào phạm vi tấn công
-        attackMode = true; // Đặt chế độ tấn công thành true
+        timer = intTimer;
+        attackMode = true;
 
-        anim.SetBool("canWalk", false); // Tắt hoạt hình đi bộ
-        anim.SetBool("Attack", true); // Bật hoạt hình tấn công
+        anim.SetBool("canWalk", false);
+        anim.SetBool("Attack", true);
     }
 
     void StopAttack()
     {
-        cooling = false; // Đặt biến cooling thành false
-        attackMode = false; // Đặt chế độ tấn công thành false
-        anim.SetBool("Attack", false); // Tắt hoạt hình tấn công
+        cooling = false;
+        attackMode = false;
+        anim.SetBool("Attack", false);
     }
 
     void RaycastDebugger()
     {
+        Vector2 rayDirection = transform.localScale.x > 0 ? Vector2.right : Vector2.left;
         if (distance > attackDistance)
         {
-            Debug.DrawRay(rayCast.position, transform.right * rayCastLength, Color.red); // Hiển thị tia raycast màu đỏ nếu khoảng cách lớn hơn khoảng cách tấn công
+            Debug.DrawRay(rayCast.position, rayDirection * rayCastLength, Color.red);
         }
         else if (distance <= attackDistance)
         {
-            Debug.DrawRay(rayCast.position, transform.right * rayCastLength, Color.green); // Hiển thị tia raycast màu xanh nếu khoảng cách nhỏ hơn hoặc bằng khoảng cách tấn công
+            Debug.DrawRay(rayCast.position, rayDirection * rayCastLength, Color.green);
         }
     }
 
@@ -158,11 +156,11 @@ public class Enemy_chem : MonoBehaviour
         Vector3 rotation = transform.eulerAngles;
         if (transform.position.x < target.position.x)
         {
-            rotation.y = 180f;
+            rotation.y = 0f;
         }
         else
         {
-            rotation.y = 0f;
+            rotation.y = 180f;
         }
         transform.eulerAngles = rotation;
     }
