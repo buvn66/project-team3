@@ -17,6 +17,7 @@ public class PlayerScript : MonoBehaviour
     public float radius; // Bán kính tấn công
     public LayerMask enemies; // Layer của đối tượng quân địch
     public float damage;
+    //dashing: lư
     private bool canDash = true;
     private bool isDashing;
     private float dashingPower = 5f;
