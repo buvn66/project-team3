@@ -22,7 +22,7 @@ public class PlayerBiggani : MonoBehaviour
         animator = GetComponent<Animator>();
     }
 
-    
+
     private void Update()
     {
         //di chuyển
@@ -82,5 +82,29 @@ public class PlayerBiggani : MonoBehaviour
             currentWeapon.SetActive(true); // Hiển thị vũ khí có sẵn
             currentWeapon = null; // Xóa reference để ngăn cản việc hiển thị lại
         }
+    }
+
+    public PlayerHealth playerHealth;
+    public void TakeDamage(int damage)
+    {
+        playerHealth.TakeDame(damage);
+    }
+
+    //Boots Speed
+    public void ApplyExtraSpeed(float speedBoost, float duration)
+    {
+        StartCoroutine(ExtraSpeedCoroutine(speedBoost, duration));
+    }
+
+    private IEnumerator ExtraSpeedCoroutine(float speedBoost, float duration)
+    {
+        // Tăng tốc độ
+        moveSpeed += speedBoost;
+
+        // Chờ đợi cho đến khi hết thời hạn
+        yield return new WaitForSeconds(duration);
+
+        // Giảm tốc độ trở lại như ban đầu
+        moveSpeed -= speedBoost;
     }
 }
