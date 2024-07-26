@@ -1,59 +1,59 @@
-﻿using UnityEngine;
+﻿//using UnityEngine;
 
-public class Boss : MonoBehaviour
-{
-    private Transform player;
-    public int attackDamage = 5; // Giá trị sát thương của Boss là 5
-    public float attackRange = 3f;
-    private Player playerScript;
-    private float attackCooldown = 2f; // Thời gian chờ giữa các lần tấn công
-    private float lastAttackTime;
+//public class Boss : MonoBehaviour
+//{
+//    private Transform player;
+//    public int attackDamage = 5; // Giá trị sát thương của Boss là 5
+//    public float attackRange = 3f;
+//    private Player playerScript;
+//    private float attackCooldown = 2f; // Thời gian chờ giữa các lần tấn công
+//    private float lastAttackTime;
 
-    private void Start()
-    {
-        player = GameObject.FindGameObjectWithTag("Player").transform;
-        if (player != null)
-        {
-            playerScript = player.GetComponent<Player>();
-        }
-        lastAttackTime = -attackCooldown; // Để Boss có thể tấn công ngay từ đầu
-    }
+//    private void Start()
+//    {
+//        player = GameObject.FindGameObjectWithTag("Player").transform;
+//        if (player != null)
+//        {
+//            playerScript = player.GetComponent<Player>();
+//        }
+//        lastAttackTime = -attackCooldown; // Để Boss có thể tấn công ngay từ đầu
+//    }
 
-    public void LookAtPlayer()
-    {
-        if (player == null)
-            return;
+//    public void LookAtPlayer()
+//    {
+//        if (player == null)
+//            return;
 
-        Vector3 scale = transform.localScale;
-        if (transform.position.x > player.position.x && scale.x > 0)
-        {
-            scale.x *= -1;
-        }
-        else if (transform.position.x < player.position.x && scale.x < 0)
-        {
-            scale.x *= -1;
-        }
-        transform.localScale = scale;
-    }
+//        Vector3 scale = transform.localScale;
+//        if (transform.position.x > player.position.x && scale.x > 0)
+//        {
+//            scale.x *= -1;
+//        }
+//        else if (transform.position.x < player.position.x && scale.x < 0)
+//        {
+//            scale.x *= -1;
+//        }
+//        transform.localScale = scale;
+//    }
 
-    public void AttackPlayer()
-    {
-        if (player == null || playerScript == null)
-            return;
+//    public void AttackPlayer()
+//    {
+//        if (player == null || playerScript == null)
+//            return;
 
-        float distanceToPlayer = Vector2.Distance(transform.position, player.position);
+//        float distanceToPlayer = Vector2.Distance(transform.position, player.position);
 
-        if (distanceToPlayer <= attackRange && Time.time >= lastAttackTime + attackCooldown)
-        {
-            playerScript.TakeDamage(attackDamage);
-            Debug.Log("Boss attacked the player!");
-            lastAttackTime = Time.time; // Cập nhật thời gian tấn công cuối cùng
-        }
-    }
+//        if (distanceToPlayer <= attackRange && Time.time >= lastAttackTime + attackCooldown)
+//        {
+//            playerScript.TakeDamage(attackDamage);
+//            Debug.Log("Boss attacked the player!");
+//            lastAttackTime = Time.time; // Cập nhật thời gian tấn công cuối cùng
+//        }
+//    }
 
-    private void OnDrawGizmosSelected()
-    {
-        Gizmos.color = Color.red;
-        Gizmos.DrawWireSphere(transform.position, attackRange);
-    }
-}
+//    private void OnDrawGizmosSelected()
+//    {
+//        Gizmos.color = Color.red;
+//        Gizmos.DrawWireSphere(transform.position, attackRange);
+//    }
+//}
