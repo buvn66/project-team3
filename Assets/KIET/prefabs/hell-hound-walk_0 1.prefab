@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 6353031905896971070}
   - component: {fileID: 135438099144587606}
   - component: {fileID: 4661599756389378212}
-  - component: {fileID: 8395291171560800622}
+  - component: {fileID: 6919558107676631681}
   m_Layer: 0
   m_Name: hell-hound-walk_0 1
   m_TagString: Enemy
@@ -194,10 +194,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4fe99ef15d84cab42b63f854b481a727, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  leftBoundary: -0.5
-  rifgtBoundary: 2.5
+  leftBoundary: -0.628
+  rifgtBoundary: 2.977
   moveSpeed: 1
---- !u!114 &8395291171560800622
+--- !u!114 &6919558107676631681
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -206,10 +206,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 2256077610385942224}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bd35e8ada50df6043b056a453962c764, type: 3}
+  m_Script: {fileID: 11500000, guid: e741851cba3ad425c91ecf922cc6b379, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyPrefabs: {fileID: 2256077610385942224}
-  spawnRarte: 1.5
-  spawnRadius: 5
-  spawnTimer: 1
+  _data:
+    _json: '{"declarations":{"Kind":"Object","collection":{"$content":[],"$version":"A"},"$version":"A"}}'
+    _objectReferences: []
