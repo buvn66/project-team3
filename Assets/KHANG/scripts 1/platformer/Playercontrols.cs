@@ -93,7 +93,7 @@ public class Playercontrols : MonoBehaviour
     private void Jump()
     {
         //kiểm tra nhân vật còn trên mặt đất hay không
-        var Check = _boxCollider2D.IsTouchingLayers(LayerMask.GetMask("Platform"));
+        var Check = _boxCollider2D.IsTouchingLayers(LayerMask.GetMask("ground"));
         if (Check == false)
         {
             return;
