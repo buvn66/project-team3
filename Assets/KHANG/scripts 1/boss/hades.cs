@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using static UnityEditor.Experimental.GraphView.GraphView;
 
 public class hades : MonoBehaviour
 {
@@ -42,17 +43,5 @@ public class hades : MonoBehaviour
 
         healthBar.value = health;
     }
-
-    private void OnTriggerEnter2D(Collider2D other)
-    {
-        // deal the player damage ! 
-        if (other.CompareTag("Player") && isDead == false)
-        {
-            if (timeBtwDamage <= 0)
-            {
-                camAnim.SetTrigger("shake");
-                other.GetComponent<Player>().health -= damage;
-            }
-        }
-    }
+    
 }
