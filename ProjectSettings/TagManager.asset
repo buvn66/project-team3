@@ -4,20 +4,8 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - house
-  - tree
-  - bullet
-  - gate
-  - boss
-  - UI
-  - coins
-  - Enemies
-  - item
-  - itemsecret
-  - EnemySpawner
-  - enemy
-  - Platform
-  - player
+  - ground
+  - Enemy
   layers:
   - Default
   - TransparentFX
@@ -25,8 +13,8 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
+  - 'Player '
+  - Enemy
   - 
   - 
   - 
@@ -52,21 +40,6 @@ TagManager:
   - 
   - 
   m_SortingLayers:
-  - name: backgoundtopdown
-    uniqueID: 1135690899
-    locked: 0
   - name: Default
     uniqueID: 0
-    locked: 0
-  - name: tilemap
-    uniqueID: 4116005073
-    locked: 0
-  - name: platfrom
-    uniqueID: 2019880369
-    locked: 0
-  - name: player
-    uniqueID: 4094007165
-    locked: 0
-  - name: UI
-    uniqueID: 1007062753
     locked: 0
