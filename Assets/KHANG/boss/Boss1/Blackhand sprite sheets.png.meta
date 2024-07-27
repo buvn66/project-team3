@@ -1,0 +1,1029 @@
+fileFormatVersion: 2
+guid: a30d27cd7cbf9514e8ec99076a1cde47
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Blackhand sprite sheets_0
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 997
+        width: 127
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea4269d64645ee84b950c68b1ba4e03d
+      internalID: 2074995308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blackhand sprite sheets_1
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 999
+        width: 109
+        height: 151
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92db475af09b34248afc05866af432b3
+      internalID: -1316909420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blackhand sprite sheets_2
+      rect:
+        serializedVersion: 2
+        x: 536
+        y: 999
+        width: 108
+        height: 151
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf2008eac1071ae408f982aff66eb207
+      internalID: 2072454388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blackhand sprite sheets_3
+      rect:
+        serializedVersion: 2
+        x: 787
+        y: 991
+        width: 97
+        height: 159
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c73b2754a074e194a87b59d6fc6f9028
+      internalID: 70280187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blackhand sprite sheets_4
+      rect:
+        serializedVersion: 2
+        x: 1020
+        y: 999
+        width: 109
+        height: 151
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e743b9230032c52488b3fcec3a89be13
+      internalID: -541192499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blackhand sprite sheets_5
+      rect:
+        serializedVersion: 2
+        x: 1253
+        y: 999
+        width: 128
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fab45459530b7748a1b74eb00363169
+      internalID: -444604617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blackhand sprite sheets_6
+      rect:
+        serializedVersion: 2
+        x: 1499
+        y: 997
+        width: 109
+        height: 151
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9eaf6cff6419a6e41940a2ecd3342307
+      internalID: 2038038675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blackhand sprite sheets_7
+      rect:
+        serializedVersion: 2
+        x: 1738
+        y: 990
+        width: 105
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 451dfd0f51c6e6c498e891fd0fe13b14
+      internalID: 647901172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blackhand sprite sheets_8
+      rect:
+        serializedVersion: 2
+        x: 1977
+        y: 987
+        width: 99
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b441d6a24344841468d6a1a2a331d76c
+      internalID: -1878835105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blackhand sprite sheets_9
+      rect:
+        serializedVersion: 2
+        x: 2228
+        y: 991
+        width: 115
+        height: 171
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4853558e54095144f8aa686350475683
+      internalID: 1278895503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blackhand sprite sheets_10
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 734
+        width: 111
+        height: 203
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7e0ebcc76f5b1a4aa5f0df1d298f05e
+      internalID: -233240174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blackhand sprite sheets_11
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 734
+        width: 112
+        height: 203
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11d45ba33e975f748a7f3759bdfdf79a
+      internalID: -1891555475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blackhand sprite sheets_12
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 734
+        width: 110
+        height: 203
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8eb45473a0d2d8f40b429209176d5da3
+      internalID: -1677668077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blackhand sprite sheets_13
+      rect:
+        serializedVersion: 2
+        x: 787
+        y: 734
+        width: 110
+        height: 203
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2265a93d49460e74a9f247e600b68336
+      internalID: -1858046628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blackhand sprite sheets_14
+      rect:
+        serializedVersion: 2
+        x: 1001
+        y: 737
+        width: 181
+        height: 207
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33a1cd2c1815fb94c9c7e86b0d5f0ac9
+      internalID: -245505334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blackhand sprite sheets_15
+      rect:
+        serializedVersion: 2
+        x: 1210
+        y: 734
+        width: 217
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba64adc54963d3e46a885f6f13945a1e
+      internalID: 1186943284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blackhand sprite sheets_16
+      rect:
+        serializedVersion: 2
+        x: 1451
+        y: 734
+        width: 207
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81c8fa673b52fbf4689b4d44ca5b8b27
+      internalID: 1009091161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blackhand sprite sheets_17
+      rect:
+        serializedVersion: 2
+        x: 1688
+        y: 734
+        width: 205
+        height: 169
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed91385f5ddee4346bf1f47d0e27f20b
+      internalID: -1806470611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blackhand sprite sheets_18
+      rect:
+        serializedVersion: 2
+        x: 1940
+        y: 734
+        width: 206
+        height: 169
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1133defdcf11a554baa131821ea4968f
+      internalID: -1896383825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blackhand sprite sheets_19
+      rect:
+        serializedVersion: 2
+        x: 2178
+        y: 734
+        width: 216
+        height: 169
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 719b225570f4dbb4688bce948af95c9f
+      internalID: -271364774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blackhand sprite sheets_20
+      rect:
+        serializedVersion: 2
+        x: 1538
+        y: 606
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00f02f4038b69f64e9deaf63af617b50
+      internalID: 1766478367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blackhand sprite sheets_21
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 509
+        width: 67
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2d362922b7c9454e9aeeb3cc33f2ee4
+      internalID: 1810103057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blackhand sprite sheets_22
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 509
+        width: 66
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71b078d0fe31e6048aa173560eb1d993
+      internalID: -1215206708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blackhand sprite sheets_23
+      rect:
+        serializedVersion: 2
+        x: 556
+        y: 509
+        width: 67
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2b5f929d32ec544b8c9ba9c43a1c601
+      internalID: -1696322409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blackhand sprite sheets_24
+      rect:
+        serializedVersion: 2
+        x: 809
+        y: 509
+        width: 66
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5abe37d74ab857b459bb84f1bf0fbcdc
+      internalID: 1276493951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blackhand sprite sheets_25
+      rect:
+        serializedVersion: 2
+        x: 1045
+        y: 509
+        width: 59
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9826b3b9c8b7bab41819bac7bb26263f
+      internalID: -297313553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blackhand sprite sheets_26
+      rect:
+        serializedVersion: 2
+        x: 1287
+        y: 509
+        width: 61
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba8b614f1a3c54346a9be3bcf69a2ca5
+      internalID: -329127105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blackhand sprite sheets_27
+      rect:
+        serializedVersion: 2
+        x: 1526
+        y: 509
+        width: 57
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57e9673513f80cf429368cf0c9bda87e
+      internalID: -1472822730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blackhand sprite sheets_28
+      rect:
+        serializedVersion: 2
+        x: 1750
+        y: 519
+        width: 81
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50dd02dcd65264b4095409d87f4cedb7
+      internalID: -398450997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blackhand sprite sheets_29
+      rect:
+        serializedVersion: 2
+        x: 1983
+        y: 523
+        width: 74
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df8c58990da8a02419585e452ff4ddf6
+      internalID: 627771238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blackhand sprite sheets_30
+      rect:
+        serializedVersion: 2
+        x: 2228
+        y: 528
+        width: 85
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7741f2acee13f4c4194d9062889f3317
+      internalID: -663101704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blackhand sprite sheets_31
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 261
+        width: 128
+        height: 151
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2a397b359ce4ad44b57adc2efdc7b39
+      internalID: -1123029491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blackhand sprite sheets_32
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 253
+        width: 109
+        height: 159
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c89e470c9f3b0294fbb78e78ba2bc536
+      internalID: 1805730477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blackhand sprite sheets_33
+      rect:
+        serializedVersion: 2
+        x: 547
+        y: 256
+        width: 97
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16bc5a06f716e4644b64a106dead631d
+      internalID: 1107713067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blackhand sprite sheets_34
+      rect:
+        serializedVersion: 2
+        x: 756
+        y: 265
+        width: 128
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c43611d5b11bf594e923777730c258ea
+      internalID: -918272318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blackhand sprite sheets_35
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 29
+        width: 115
+        height: 171
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 682d4619b982fc2488d1a1a8352d0049
+      internalID: 2003890518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blackhand sprite sheets_36
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 38
+        width: 128
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86c91f2a689c2284dbb30ffa26c1da43
+      internalID: -1200210259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blackhand sprite sheets_37
+      rect:
+        serializedVersion: 2
+        x: 526
+        y: 39
+        width: 127
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebb7ad9b45fa4794aa763e4845310cf2
+      internalID: -1156500940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blackhand sprite sheets_38
+      rect:
+        serializedVersion: 2
+        x: 767
+        y: 49
+        width: 108
+        height: 151
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d74639ed58020d4b9036af3054172ca
+      internalID: 2121135153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blackhand sprite sheets_39
+      rect:
+        serializedVersion: 2
+        x: 1026
+        y: 45
+        width: 97
+        height: 159
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7982f3e60c6cc5948ac26945c8bc3cca
+      internalID: 1849985815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blackhand sprite sheets_40
+      rect:
+        serializedVersion: 2
+        x: 1253
+        y: 56
+        width: 128
+        height: 148
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8ba0defea21591408e8519faf843776
+      internalID: 2018940150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Blackhand sprite sheets_0: 2074995308
+      Blackhand sprite sheets_1: -1316909420
+      Blackhand sprite sheets_10: -233240174
+      Blackhand sprite sheets_11: -1891555475
+      Blackhand sprite sheets_12: -1677668077
+      Blackhand sprite sheets_13: -1858046628
+      Blackhand sprite sheets_14: -245505334
+      Blackhand sprite sheets_15: 1186943284
+      Blackhand sprite sheets_16: 1009091161
+      Blackhand sprite sheets_17: -1806470611
+      Blackhand sprite sheets_18: -1896383825
+      Blackhand sprite sheets_19: -271364774
+      Blackhand sprite sheets_2: 2072454388
+      Blackhand sprite sheets_20: 1766478367
+      Blackhand sprite sheets_21: 1810103057
+      Blackhand sprite sheets_22: -1215206708
+      Blackhand sprite sheets_23: -1696322409
+      Blackhand sprite sheets_24: 1276493951
+      Blackhand sprite sheets_25: -297313553
+      Blackhand sprite sheets_26: -329127105
+      Blackhand sprite sheets_27: -1472822730
+      Blackhand sprite sheets_28: -398450997
+      Blackhand sprite sheets_29: 627771238
+      Blackhand sprite sheets_3: 70280187
+      Blackhand sprite sheets_30: -663101704
+      Blackhand sprite sheets_31: -1123029491
+      Blackhand sprite sheets_32: 1805730477
+      Blackhand sprite sheets_33: 1107713067
+      Blackhand sprite sheets_34: -918272318
+      Blackhand sprite sheets_35: 2003890518
+      Blackhand sprite sheets_36: -1200210259
+      Blackhand sprite sheets_37: -1156500940
+      Blackhand sprite sheets_38: 2121135153
+      Blackhand sprite sheets_39: 1849985815
+      Blackhand sprite sheets_4: -541192499
+      Blackhand sprite sheets_40: 2018940150
+      Blackhand sprite sheets_5: -444604617
+      Blackhand sprite sheets_6: 2038038675
+      Blackhand sprite sheets_7: 647901172
+      Blackhand sprite sheets_8: -1878835105
+      Blackhand sprite sheets_9: 1278895503
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
