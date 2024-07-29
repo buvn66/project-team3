@@ -3,15 +3,7 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-<<<<<<< HEAD
   tags: []
-=======
-  tags:
-  - ground
-  - Enemy
-  - Platform
-  - Spikes
->>>>>>> 84aa4a95a7230929d2cfd85d29208c201c31dfb5
   layers:
   - Default
   - TransparentFX
@@ -19,13 +11,8 @@ TagManager:
   - 
   - Water
   - UI
-<<<<<<< HEAD
   - 
   - 
-=======
-  - Player
-  - Enemy
->>>>>>> 84aa4a95a7230929d2cfd85d29208c201c31dfb5
   - 
   - 
   - 
