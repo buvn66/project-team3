@@ -7,6 +7,8 @@ TagManager:
   - ground
   - Enemy
   - Platform
+  - fire
+  - enemy
   layers:
   - Default
   - TransparentFX

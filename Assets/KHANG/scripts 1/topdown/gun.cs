@@ -33,5 +33,7 @@ public class Gun : MonoBehaviour
         // Thêm lực đẩy cho viên đạn theo hướng firePoint với tốc độ bulletSpeed
         Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
         rb.velocity = firePoint.right * bulletSpeed;
+        //huy viên đạn sao 2s
+        Destroy(bullet,3f);
     }
 }
