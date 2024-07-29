@@ -1,6 +1,8 @@
 ﻿using UnityEngine;
+using System.Collections;
+using System.Collections.Generic;
 
-public class Boss : MonoBehaviour
+public class BossEnemy : MonoBehaviour
 {
     private Transform player;
     public int attackDamage = 5; // Giá trị sát thương của Boss là 5
@@ -45,7 +47,7 @@ public class Boss : MonoBehaviour
 
         if (distanceToPlayer <= attackRange && Time.time >= lastAttackTime + attackCooldown)
         {
-            playerScript.TakeDamage(attackDamage);
+            //playerScript.TakeDamage(attackDamage);
             Debug.Log("Boss attacked the player!");
             lastAttackTime = Time.time; // Cập nhật thời gian tấn công cuối cùng
         }
