@@ -8,7 +8,6 @@ TagManager:
   - Enemy
   - Platform
   - Spikes
-  - CongDichChuyen
   layers:
   - Default
   - TransparentFX

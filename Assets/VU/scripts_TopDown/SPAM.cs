@@ -1,10 +1,8 @@
-﻿
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor.Animations;
 using UnityEngine;
 
-public class Spam : MonoBehaviour
+public class SPAM : MonoBehaviour
 {
     public GameObject enemyPrefabs;
     [SerializeField]
@@ -23,7 +21,7 @@ public class Spam : MonoBehaviour
         if (spawnTimer > spawnRadius)
         {
             SpawnEnemy();
-            spawnTimer = 1f;
+            spawnTimer = 0.5f;
         }
 
     }

@@ -14,7 +14,6 @@ GameObject:
   - component: {fileID: 6353031905896971070}
   - component: {fileID: 135438099144587606}
   - component: {fileID: 4661599756389378212}
-  - component: {fileID: 6919558107676631681}
   m_Layer: 0
   m_Name: hell-hound-walk_0 1
   m_TagString: Enemy
@@ -160,7 +159,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 4
+  m_Constraints: 0
 --- !u!95 &135438099144587606
 Animator:
   serializedVersion: 5
@@ -194,21 +193,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4fe99ef15d84cab42b63f854b481a727, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  leftBoundary: -0.628
-  rifgtBoundary: 2.977
+  leftBoundary: -0.5
+  rifgtBoundary: 2.5
   moveSpeed: 1
---- !u!114 &6919558107676631681
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2256077610385942224}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e741851cba3ad425c91ecf922cc6b379, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _data:
-    _json: '{"declarations":{"Kind":"Object","collection":{"$content":[],"$version":"A"},"$version":"A"}}'
-    _objectReferences: []
