@@ -7,7 +7,7 @@ using UnityEngine.U2D;
 using System;
 using UnityEngine.UI;
 
-public class Knight : MonoBehaviour
+public class Knights : MonoBehaviour
 {
     [SerializeField]
     private float leftBoundary;

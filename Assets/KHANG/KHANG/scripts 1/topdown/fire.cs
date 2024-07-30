@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-public class Gun : MonoBehaviour
+public class fire : MonoBehaviour
 {
 
     public GameObject bulletPrefab;  // Prefab của đạn
