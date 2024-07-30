@@ -40,5 +40,12 @@ public class CubeController : MonoBehaviour
         animator.SetTrigger("Stop");
         isRolling = false;
         weaponObject.SetActive(true);
+        StartCoroutine(DestroyAfterDelay(3f));
+    }
+
+    IEnumerator DestroyAfterDelay(float delay)
+    {
+        yield return new WaitForSeconds(delay); // Đợi 5 giây
+        Destroy(gameObject); // Hủy đối tượng
     }
 }

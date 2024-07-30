@@ -3,15 +3,11 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-<<<<<<< HEAD
-  tags: []
-=======
   tags:
-  - ground
   - Enemy
-  - Platform
-  - Spikes
->>>>>>> 84aa4a95a7230929d2cfd85d29208c201c31dfb5
+  - Weapon
+  - EnemySpawn
+  - FireBall
   layers:
   - Default
   - TransparentFX
@@ -19,13 +15,8 @@ TagManager:
   - 
   - Water
   - UI
-<<<<<<< HEAD
   - 
   - 
-=======
-  - Player
-  - Enemy
->>>>>>> 84aa4a95a7230929d2cfd85d29208c201c31dfb5
   - 
   - 
   - 
@@ -53,4 +44,40 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Ground
+    uniqueID: 856395015
+    locked: 0
+  - name: Ground 1
+    uniqueID: 1260098107
+    locked: 0
+  - name: "C\u1EADu"
+    uniqueID: 3395856803
+    locked: 0
+  - name: "T\u01B0\u1EE3ng"
+    uniqueID: 2987180781
+    locked: 0
+  - name: Weapon
+    uniqueID: 141911265
+    locked: 0
+  - name: Enemys
+    uniqueID: 118962027
+    locked: 0
+  - name: Ball
+    uniqueID: 2131563875
+    locked: 0
+  - name: Coins
+    uniqueID: 948786623
+    locked: 0
+  - name: Player
+    uniqueID: 1329516083
+    locked: 0
+  - name: Walls
+    uniqueID: 2110149499
+    locked: 0
+  - name: Trees
+    uniqueID: 1326201073
+    locked: 0
+  - name: Cube
+    uniqueID: 3235496659
     locked: 0

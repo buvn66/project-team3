@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
@@ -7,13 +7,12 @@ public class PlayerHealth : MonoBehaviour
 {
     [SerializeField] int maxHealth;
     int currentHealth;
-    public HealthBar healthBar;
-
+    public GameController GameController;
     public UnityEvent OnDeath;
 
     private void OnEnable()
     {
-        OnDeath.AddListener(Death); 
+        OnDeath.AddListener(Death);
     }
 
     private void OnDisable()
@@ -24,21 +23,20 @@ public class PlayerHealth : MonoBehaviour
     void Start()
     {
         currentHealth = maxHealth;
-
-        healthBar.UpdateBar(currentHealth, maxHealth);
+        GameController.UpdateBar(currentHealth, maxHealth);
     }
 
     public void TakeDame(int dame)
     {
         currentHealth -= dame;
 
-        if (currentHealth < 0)
+        if (currentHealth <= 0)
         {
             currentHealth = 0;
             OnDeath.Invoke();
         }
 
-        healthBar.UpdateBar(currentHealth, maxHealth);
+        GameController.UpdateBar(currentHealth, maxHealth);
     }
 
     public void Death()
@@ -46,11 +44,12 @@ public class PlayerHealth : MonoBehaviour
         Destroy(gameObject);
     }
 
-    void Update()
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        if(Input.GetKeyUp(KeyCode.Space))
+        // Kiểm tra xem đối tượng va chạm có tag "Enemy" không
+        if (other.CompareTag("Enemy"))
         {
-            TakeDame(20);
+            TakeDame(1); // Hoặc giá trị thiệt hại khác
         }
     }
 }

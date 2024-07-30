@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Bullet : MonoBehaviour
+public class BulletEnemy : MonoBehaviour
 {
     [SerializeField]
     public float speed = 10f;
@@ -15,11 +15,5 @@ public class Bullet : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         rb.velocity = transform.right * speed;
         Destroy(gameObject, lifefire);
-    }
-
-
-    void Update()
-    {
-
     }
 }
