@@ -37030,7 +37030,7 @@ PrefabInstance:
       objectReference: {fileID: 8300000, guid: ea0d247bd011a7a49a8ad7242fb667aa, type: 3}
     - target: {fileID: 6005213711859713941, guid: 89b4ad788c311b94fbd3dd8b441deaa4, type: 3}
       propertyPath: enemies.m_Bits
-      value: 0
+      value: 128
       objectReference: {fileID: 0}
     - target: {fileID: 6536070898839937427, guid: 89b4ad788c311b94fbd3dd8b441deaa4, type: 3}
       propertyPath: m_LocalBounds.m_Center.x

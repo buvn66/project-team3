@@ -107,8 +107,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 1329516083
-  m_SortingLayer: 9
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: 1
   m_Sprite: {fileID: -26181218, guid: 199a26e64da73fb42b5296c55f02e25b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -244,8 +244,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 970da12e7976e264e9817b8ecec2a0b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 7
-  GameController: {fileID: 0}
+  maxHealth: 100
+  healthBar: {fileID: 0}
   OnDeath:
     m_PersistentCalls:
       m_Calls: []
