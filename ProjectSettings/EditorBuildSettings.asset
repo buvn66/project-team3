@@ -4,15 +4,5 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-<<<<<<< HEAD
   m_Scenes: []
-=======
-  m_Scenes:
-  - enabled: 1
-    path: Assets/GIANG/MenuGame.unity
-    guid: 93ac529ea5b4df748b56ce2b5d713e67
-  - enabled: 1
-    path: Assets/GIANG/GameGiang.unity
-    guid: 72ddec11903acc84fbb465373948f89d
->>>>>>> 2884d034d3f0788a6cec6af910de7ea265916156
   m_configObjects: {}
