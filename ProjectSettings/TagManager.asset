@@ -8,6 +8,8 @@ TagManager:
   - Weapon
   - EnemySpawn
   - FireBall
+  - ground
+  - CongDichChuyen
   layers:
   - Default
   - TransparentFX
@@ -15,8 +17,8 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
+  - 'Player '
+  - Enemy
   - 
   - 
   - 
