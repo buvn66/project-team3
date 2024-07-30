@@ -72,6 +72,9 @@ TagManager:
   - name: Player
     uniqueID: 1329516083
     locked: 0
+  - name: Skull
+    uniqueID: 1551626555
+    locked: 0
   - name: Walls
     uniqueID: 2110149499
     locked: 0
