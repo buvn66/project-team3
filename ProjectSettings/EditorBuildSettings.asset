@@ -4,5 +4,41 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/KHANG/KHANG/scene/KHANG.unity
+    guid: 93be6df39249fe940af4c67cdfa6ed3c
+  - enabled: 1
+    path: Assets/KHANG/KHANG/scene/boss 1.unity
+    guid: 2dd41a50edb747e4e949da9516d1a394
+  - enabled: 1
+    path: Assets/KHANG/KHANG/scene/boss2.unity
+    guid: ce0e62abf032f4a49a9058c093227573
+  - enabled: 1
+    path: Assets/KHANG/KHANG/scene/boss3.unity
+    guid: ff686ba5d27453542b62cadf48e44254
+  - enabled: 1
+    path: Assets/KHANG/KHANG/scene/cutscene1.unity
+    guid: 9de7907dd100f924bb6c9c8988545298
+  - enabled: 1
+    path: Assets/KHANG/KHANG/scene/cutscene2.unity
+    guid: ab0534505c99ba545bd2f49d294f1216
+  - enabled: 1
+    path: Assets/GIANG/MenuGame.unity
+    guid: 93ac529ea5b4df748b56ce2b5d713e67
+  - enabled: 1
+    path: Assets/GIANG/GameGiang.unity
+    guid: 72ddec11903acc84fbb465373948f89d
+  - enabled: 1
+    path: Assets/KIET/scene/Scene2.unity
+    guid: 2836400bce9c7004b9297f8eefa83736
+  - enabled: 1
+    path: Assets/KIET/scene/Scene 2.1.unity
+    guid: 4ae6eb9788b8a274eaa0630a63b52abe
+  - enabled: 1
+    path: Assets/VU/Scene/platformvu.unity
+    guid: d583ad651c3de4744800f3f770fbdcf5
+  - enabled: 1
+    path: Assets/VU/Scene/anhvu.unity
+    guid: 6706970d756361243a76c04aada52513
   m_configObjects: {}
