@@ -3,7 +3,15 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
+<<<<<<< HEAD
   tags: []
+=======
+  tags:
+  - Enemy
+  - Weapon
+  - EnemySpawn
+  - FireBall
+>>>>>>> 2884d034d3f0788a6cec6af910de7ea265916156
   layers:
   - Default
   - TransparentFX
