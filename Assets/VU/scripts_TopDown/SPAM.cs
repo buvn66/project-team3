@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SPAM : MonoBehaviour
+public class SPAMa : MonoBehaviour
 {
     public GameObject enemyPrefabs;
     [SerializeField]
@@ -25,7 +25,7 @@ public class SPAM : MonoBehaviour
         }
 
     }
-    private void OnDrawGizmosSelected()
+    private void OnDrawGizmosSelecte()
     {
         Gizmos.color = Color.yellow;
         Gizmos.DrawWireSphere(transform.position, spawnRadius);

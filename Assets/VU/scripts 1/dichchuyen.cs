@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DichChuyen : MonoBehaviour
+public class DichChuyen1 : MonoBehaviour
 {
     [SerializeField]  GameObject Cong;
 
