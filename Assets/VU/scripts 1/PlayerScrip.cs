@@ -187,6 +187,9 @@ public class PlayerScript : MonoBehaviour
         rb.velocity = new Vector2(transform.localScale.x * dashingPower, 0f);
         tr.emitting = true;
 
+        // Kích hoạt animation dash
+        anim.SetTrigger("Dash");
+
         // Phát âm thanh dashing ngay lập tức
         audioSource.PlayOneShot(dashSound);
 
@@ -194,6 +197,10 @@ public class PlayerScript : MonoBehaviour
         tr.emitting = false;
         rb.gravityScale = originalGravity;
         isDashing = false;
+
+        // Quay lại trạng thái idle
+        anim.SetTrigger("Idle");
+
         yield return new WaitForSeconds(dashingCooldown);
         canDash = true;
     }

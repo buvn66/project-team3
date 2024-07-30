@@ -1,12 +1,14 @@
-//using System.Collections;
-//using System.Collections.Generic;
-//using UnityEngine;
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
 
-//public class CongDichChuyen : MonoBehaviour
-//{
-//    [SerializeField] Transform diemDichChuyenDen;
-//    public Transform GetDiemDichChuyen()
-//    {
-//        return diemDichChuyenDen;
-//    }
-//}
+
+public class CongDichChuyen : MonoBehaviour
+{
+    [SerializeField] Transform diemDichChuyenDen;
+    public Transform GetDiemDichChuyen()
+    {
+        return diemDichChuyenDen;
+    }
+}
+
