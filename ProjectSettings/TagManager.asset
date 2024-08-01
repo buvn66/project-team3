@@ -10,6 +10,12 @@ TagManager:
   - FireBall
   - ground
   - CongDichChuyen
+  - house
+  - gate
+  - enemy
+  - EnemySpawner
+  - tree
+  - Platfrom
   layers:
   - Default
   - TransparentFX
