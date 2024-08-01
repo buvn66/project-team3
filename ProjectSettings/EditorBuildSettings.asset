@@ -18,6 +18,9 @@ EditorBuildSettings:
     path: Assets/VU/Scene/anhvu.unity
     guid: 6706970d756361243a76c04aada52513
   - enabled: 1
+    path: Assets/VU/Scene/CHcsene1.unity
+    guid: 28a89062604eca64498b6e571248280b
+  - enabled: 1
     path: Assets/KHANG/KHANG/scene/cutscene2.unity
     guid: ab0534505c99ba545bd2f49d294f1216
   - enabled: 1
