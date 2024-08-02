@@ -16,6 +16,9 @@ TagManager:
   - EnemySpawner
   - tree
   - Platfrom
+  - Platform
+  - jumd
+  - dog
   layers:
   - Default
   - TransparentFX
