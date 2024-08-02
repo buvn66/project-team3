@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
-public class PlayerHealth1 : MonoBehaviour
+public class PlayerHealth : MonoBehaviour
 {
     [SerializeField] int maxHealth;
     int currentHealth;
@@ -50,6 +50,12 @@ public class PlayerHealth1 : MonoBehaviour
         if (other.CompareTag("Enemy"))
         {
             TakeDame(1); // Hoặc giá trị thiệt hại khác
+        }
+
+        // Kiểm tra xem đối tượng va chạm có tag "Hitbox" không
+        if (other.CompareTag("hitbox"))
+        {
+            TakeDame(1); // Trừ 1 máu khi va chạm với đối tượng có tag "Hitbox"
         }
     }
 }

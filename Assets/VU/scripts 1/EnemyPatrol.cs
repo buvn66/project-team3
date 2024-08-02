@@ -9,7 +9,7 @@ public class EnemyPatrol : MonoBehaviour
     private Rigidbody2D rb;
     private Animator anim;
     private Transform currentPoint;
-    public float speed;
+    private float speed;
     private bool isDead = false;
 
     // Start is called before the first frame update
