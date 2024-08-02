@@ -9,7 +9,6 @@ public class PlayerBiggani : MonoBehaviour
     public float moveSpeed = 5f;
     private Rigidbody2D rb;
     public Vector3 moveInput;
-
     private Animator animator;
 
     public float dashBoost = 2f;
@@ -107,4 +106,5 @@ public class PlayerBiggani : MonoBehaviour
         // Giảm tốc độ trở lại như ban đầu
         moveSpeed -= speedBoost;
     }
+    
 }
