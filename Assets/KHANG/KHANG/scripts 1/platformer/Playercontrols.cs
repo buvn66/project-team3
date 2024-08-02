@@ -10,39 +10,28 @@ public class Playercontrols : MonoBehaviour
 {
 
 
-    //làm cho nhân vật duy chuyển 
-    //public là hàm tồn tại ở mọi nơi 
-    //private làm hàm tồ tại chỉ trong một class
     [SerializeField] //SerializeField cho phép chỉnh sửa tr edit
     public float movespeed = 5f;
-
 
     // giá tri lực nhẩy
     [SerializeField]
     private float _jumpForce = 40f;
 
-
     //kiểm tra hướng duy  chuyển của nhân vật 
     private bool isMovingRight = true;
 
-
     //tham chiếu tới rigibody 2D        
-    private Rigidbody2D _rigibody2D;
-
+    private Rigidbody2D _rigidbody2D;
 
     //tham chiếu tới BoxCollider2D
     private BoxCollider2D _boxCollider2D;
-
-    //tham chiếu tới animator
-    private Animator _animator;
 
     //hàm start dùng để khởi tạo các  giá trị của biến 
     private void Start()
     {
         _boxCollider2D = GetComponent<BoxCollider2D>();
-        _rigibody2D = GetComponent<Rigidbody2D>();
-        _animator = GetComponent<Animator>();
-
+        _rigidbody2D = GetComponent<Rigidbody2D>();
+      
     }
 
 
@@ -56,32 +45,30 @@ public class Playercontrols : MonoBehaviour
 
     private void Move()
     {
-        //horizontalInput lắng nghe các phím điều hướng 
+        //"horizantalInput" lắng nghe các phim A,D,LEFT,RIGHT.
+        //(0) là không nhấn nút,(letf) là số âm, (right) là số dương.
+
         var horizontalInput = Input.GetAxis("Horizontal");
-        //điều khiển phải trái
+        //điều khiên phải trái 
+        //"+=" là lấy trá tri bang đâu + ra một giá trị mới
         transform.localPosition += new Vector3(horizontalInput, 0, 0)
             * movespeed * Time.deltaTime;
-        //+= là lấy giá tri ban đầu tạo ra giá trị mới
-
+        //transform quản lý thuộc tính
+        //localPosition là vị trí tương đối so với cha
+        //position vị trí 
+        //rotation xuây
+        //scale phóng to thu nhỏ hình
         if (horizontalInput > 0)
         {
-            //qua phải
+            //qua phải 
             isMovingRight = true;
-            _animator.SetBool("Isrunning", true);
-            _animator.SetBool("Isjump", true);
         }
         else if (horizontalInput < 0)
         {
             //qua trái 
             isMovingRight = false;
-            _animator.SetBool("Isrunning", false);
-            _animator.SetBool("Isjump", false);
         }
-        else
-        {
-            //đứng yên 
-            _animator.SetBool("Isrunning", false);
-        }
+
         //xoay nhân vật 
         transform.localScale = isMovingRight ?
             new Vector2(1f, 1f)
@@ -89,7 +76,7 @@ public class Playercontrols : MonoBehaviour
     }
 
 
-    //hàm sử lý Jump
+    //hàm sử lý jump
     private void Jump()
     {
         //kiểm tra nhân vật còn trên mặt đất hay không
@@ -102,8 +89,9 @@ public class Playercontrols : MonoBehaviour
         if (verticalInput > 0)
         {
             //1. tạo lực nhảy lên trên.
-            //_rigidbody2D.AddForce(new Vector2(0, _jumpForce));
-            _rigibody2D.velocity = new Vector2(_rigibody2D.velocity.x, _jumpForce);
+            _rigidbody2D.AddForce(new Vector2(0, _jumpForce));
+            //_rigidbody2D.velocity = new Vector2(_rigidbody2D.velocity.x, _jumpForce);
         }
+
     }
 }
