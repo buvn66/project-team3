@@ -33,7 +33,7 @@ public class Enemyheath : MonoBehaviour
 
     private IEnumerator DisappearAfterDeath()
     {
-        yield return new WaitForSeconds(3); // Wait for 3 seconds
+        yield return new WaitForSeconds(0.5f); // Wait for 3 seconds
         Destroy(gameObject); // Destroy the enemy game object
     }
 }

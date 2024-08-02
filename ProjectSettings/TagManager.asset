@@ -10,6 +10,8 @@ TagManager:
   - FireBall
   - ground
   - CongDichChuyen
+  - hitbox
+  - gai
   layers:
   - Default
   - TransparentFX
