@@ -179,7 +179,6 @@ public class PlayerScript : MonoBehaviour
             isGrounded = true;
             audioSource.PlayOneShot(jumpSound); // Phát âm thanh nhảy khi chạm đất
         }
-
     }
 
     private void OnCollisionExit2D(Collision2D collision)
@@ -189,7 +188,6 @@ public class PlayerScript : MonoBehaviour
             isGrounded = false;
         }
     }
-   
 
     private IEnumerator Dash()
     {
