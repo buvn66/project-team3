@@ -7,7 +7,7 @@ EditorBuildSettings:
   m_Scenes:
   - enabled: 1
     path: Assets/KHANG/KHANG/scene/KHANG.unity
-    guid: 93be6df39249fe940af4c67cdfa6ed3c
+    guid: 9cb122c8f7b30fe4dbf740f6c4af8d05
   - enabled: 1
     path: Assets/KHANG/KHANG/scene/boss 1.unity
     guid: 2dd41a50edb747e4e949da9516d1a394
@@ -35,7 +35,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/KIET/scene/Scene 2.1.unity
     guid: 4ae6eb9788b8a274eaa0630a63b52abe
-  - enabled: 1
+  - enabled: 0
     path: Assets/VU/Scene/platformvu.unity
     guid: d583ad651c3de4744800f3f770fbdcf5
   - enabled: 1
