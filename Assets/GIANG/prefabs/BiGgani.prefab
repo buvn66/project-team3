@@ -244,8 +244,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 970da12e7976e264e9817b8ecec2a0b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 100
-  healthBar: {fileID: 0}
+  maxHealth: 7
+  GameController: {fileID: 0}
   OnDeath:
     m_PersistentCalls:
       m_Calls: []

@@ -17,7 +17,7 @@ public class PlayerScript : MonoBehaviour
     public float radius; // Bán kính tấn công
     public LayerMask enemies; // Layer của đối tượng quân địch
     public float damage;
-    //dashing: lư
+    // Dashing
     private bool canDash = true;
     private bool isDashing;
     private float dashingPower = 5f;
@@ -26,9 +26,10 @@ public class PlayerScript : MonoBehaviour
 
     [SerializeField] private TrailRenderer tr;
 
-    // Thêm biến để lưu âm thanh nhảy và dashing
+    // Thêm biến để lưu âm thanh nhảy, dashing, và chém
     public AudioClip jumpSound;
     public AudioClip dashSound; // Âm thanh dashing
+    public AudioClip attackSound; // Âm thanh chém
     private AudioSource audioSource;
 
     public static PlayerScript instance;
@@ -57,6 +58,10 @@ public class PlayerScript : MonoBehaviour
         if (dashSound == null)
         {
             Debug.LogError("Dash sound is not assigned.");
+        }
+        if (attackSound == null)
+        {
+            Debug.LogError("Attack sound is not assigned.");
         }
     }
 
@@ -96,6 +101,12 @@ public class PlayerScript : MonoBehaviour
     // Phương thức tấn công
     void Attack()
     {
+        // Phát âm thanh chém
+        if (attackSound != null)
+        {
+            audioSource.PlayOneShot(attackSound);
+        }
+
         Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.transform.position, radius, enemies);
         foreach (Collider2D enemy in hitEnemies)
         {
