@@ -57,15 +57,5 @@ public class pepap : MonoBehaviour
             currentScale.x *= -1;
         }
         transform.localScale = currentScale;
-    }
-    private void OnTriggerEnter2D(Collider2D other)
-    {
-        if (other.gameObject.CompareTag("bullet"))
-        {
-            //nếu chạm tới viên đạn thì chết
-            Destroy(gameObject);
-            //viên đạn biến mất
-            Destroy(other.gameObject);
-        }
-    }
+    }    
 }

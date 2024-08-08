@@ -83,6 +83,12 @@ public class PlayerBiggani : MonoBehaviour
         }
     }
 
+    public PlayerHealth playerHealth;
+    public void TakeDamage(int damage)
+    {
+        playerHealth.TakeDame(damage);
+    }
+
     //Boots Speed
     public void ApplyExtraSpeed(float speedBoost, float duration)
     {
