@@ -4,5 +4,11 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/GIANG/GameGiang.unity
+    guid: 72ddec11903acc84fbb465373948f89d
+  - enabled: 1
+    path: Assets/VU/Scene/anhvu.unity
+    guid: 6706970d756361243a76c04aada52513
   m_configObjects: {}

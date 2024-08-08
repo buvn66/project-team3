@@ -74,8 +74,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -533525047
-  m_SortingLayer: 7
+  m_SortingLayerID: 141911265
+  m_SortingLayer: 5
   m_SortingOrder: 0
   m_Sprite: {fileID: -564788206, guid: afcf12385e80f4e47813774526e9dee0, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -185,4 +185,3 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AnimationDuration: 2
   spawnObjectPrefab: {fileID: 2023607623949867907, guid: 8e0cffa3186f67e408f56f52e31f92e4, type: 3}
-  challenge: {fileID: 0}
